@@ -1,10 +1,6 @@
 .DS_Store
 .vscode 
 .venv/
-ml/data/
-ml/outputs/
-ml/packaged_models/
-
 # Byte-compiled / optimized files
 __pycache__/
 *.py[cod]
