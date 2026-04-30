@@ -16,6 +16,6 @@ cd "$(dirname "$0")/.."
 export CUDA_VISIBLE_DEVICES=0
 
 # run torchrun for single GPU
-torchrun --nnodes=1 --nproc_per_node=1 -m src.train $RUN_NAME_ARG
+python -m torch.distributed.run --nnodes=1 --nproc_per_node=1 -m src.train $RUN_NAME_ARG
 
 echo "Training finished with exit code $?"

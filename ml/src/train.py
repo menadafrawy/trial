@@ -2,16 +2,15 @@ import os
 from typing import Optional, Union
 import torch
 import wandb
-import argparse  
-from datetime import datetime 
+import argparse
+from datetime import datetime
 import torch.multiprocessing as mp
 from torch.nn.parallel import DistributedDataParallel as DDP
-from torch.utils.data import random_split
 import torch.distributed as dist
 from src.models.rnn import HandwritingRNN
 from src.training.trainer import HandwritingTrainer
 from src.data.dataloader import ProcessedHandwritingDataset
-from config.config import load_config 
+from config.config import load_config
 from src.utils.paths import RunPaths
 
 config_global = load_config()
@@ -40,42 +39,38 @@ def train(rank,local_rank, world_size, run_name: Optional[str] = None):
     device = torch.device(f"cuda:{local_rank}")
     torch.cuda.set_device(device)
     
-    # load dataset
-    full_dataset = ProcessedHandwritingDataset(config_global.paths.processed_data_dir)
-    
-    # split dataset 
-    generator = torch.Generator().manual_seed(config_global.dataset.random_seed)
-    dataset_size = len(full_dataset)
-    train_size = int(config_global.dataset.train_split_ration * dataset_size)
-    val_size = dataset_size - train_size
-    train_dataset, val_dataset = random_split(
-        full_dataset, [train_size, val_size], generator=generator
-    )
-    
-    run_name_container: list[Union[str,None]] = [None]
+    # Load pre-split train and val datasets (produced by aolah_dataset.py).
+    processed_dir = config_global.paths.processed_data_dir
+    train_dataset = ProcessedHandwritingDataset(processed_dir, split='train')
+    val_dataset   = ProcessedHandwritingDataset(processed_dir, split='val')
+
+    # alphabet_size = 28 Arabic chars + 1 null token
+    alphabet_size = train_dataset.get_alphabet_size()
+
+    run_name_container: list[Union[str, None]] = [None]
     if rank == 0:
         if run_name:
-            run_name_container[0] = run_name  
+            run_name_container[0] = run_name
         else:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S") 
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             run_name_container[0] = f"run_{timestamp}"
 
     if world_size > 1:
-        dist.broadcast_object_list(run_name_container,0)
+        dist.broadcast_object_list(run_name_container, 0)
 
     run_name = run_name_container[0]
     run_paths = RunPaths(run_name, base_outputs_dir=config_global.paths.outputs_dir)
-    wandb_run = None 
-    if rank == 0: 
-        run_paths.create_directories() 
+    wandb_run = None
+    if rank == 0:
+        run_paths.create_directories()
         run_paths.copy_config_file(config_global.paths.config_file_path)
-        
+
         if config_global.wandb.enabled:
             hyperparams = {
                 **config_global.dataset.model_dump(),
                 **config_global.model_params.model_dump(),
                 **config_global.training_params.model_dump(),
-                # Add environment info
+                "alphabet_size": alphabet_size,
                 "world_size": world_size,
                 "device_type": device.type,
                 "local_rank": local_rank,
@@ -85,27 +80,27 @@ def train(rank,local_rank, world_size, run_name: Optional[str] = None):
                 "hostname": os.environ.get('HOSTNAME', 'unknown'),
                 "pytorch_version": torch.__version__,
             }
-                
+
             wandb_run = wandb.init(
                 project=config_global.wandb.project_name,
-                name= run_paths.run_name, 
-                config=hyperparams, 
-                tags=config_global.wandb.tags, 
+                name=run_paths.run_name,
+                config=hyperparams,
+                tags=config_global.wandb.tags,
                 notes=config_global.wandb.notes,
                 id=run_paths.run_name,
                 resume="allow"
             )
-            
-        print(f"Dataset loaded: {dataset_size} samples")
-        print(f"Training set: {train_size} samples")
-        print(f"Validation set: {val_size} samples")
-    
+
+        print(f"Training set:   {len(train_dataset)} samples")
+        print(f"Validation set: {len(val_dataset)} samples")
+        print(f"Alphabet size:  {alphabet_size}")
+
     # init model
     model = HandwritingRNN(
         lstm_size=config_global.model_params.lstm_size,
         output_mixture_components=config_global.model_params.output_mixture_components,
-        attention_mixture_components= config_global.model_params.attention_mixture_components,
-        alphabet_size= ProcessedHandwritingDataset.get_alphabet_size() 
+        attention_mixture_components=config_global.model_params.attention_mixture_components,
+        alphabet_size=alphabet_size,
     )
     
     model.to(device)

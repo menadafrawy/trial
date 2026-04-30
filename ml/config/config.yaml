@@ -1,17 +1,17 @@
-#config.yaml 
+#config.yaml
 paths:
   processed_data_dir: "data/processed"
-  raw_data_root: "data/raw"
+  raw_data_root: "data/raw/aolah"
   outputs_dir: "outputs"
   config_file_path: "config/config.yaml"
 
 dataset:
-  train_split_ration: 0.9 
+  train_split_ration: 0.8
   random_seed: 42
-  max_stroke_len: 1200 
-  max_text_len: 80 
+  max_stroke_len: 1200
+  max_text_len: 2
   offset_filter_threshold: 60
-  alphabet_string: ' !"#''()+,-./0123456789:;?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+  alphabet_string: 'ابتثجحخدذرزسشصضطظعغفقكلمنهوي'
 model_params:
   lstm_size: 400 
   output_mixture_components: 20 
@@ -35,8 +35,8 @@ prediction_params:
   max_length: 1200
 
 wandb:
-  enabled: true
-  project_name: "Scriptify"
-  tags: ['second_model_arch', 'scriptify']
+  enabled: false
+  project_name: "KinematicCalligrapher"
+  tags: ['arabic', 'character_level', 'aolah']
   log_model_checkpoint_freq: 0 # just mean log best model only 
   watch_model_log_freq: 100

@@ -19,7 +19,7 @@ ml/wandb/
 /wandb 
 
 
-#ignore plots 
+#ignore plots
 *.png
 
 #ignore huggingface space 

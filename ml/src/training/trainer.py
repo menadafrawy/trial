@@ -405,7 +405,7 @@ class HandwritingTrainer:
         """Generate handwriting for a batch of text"""  
         self.model.eval()  
           
-        alphabet = ProcessedHandwritingDataset.get_alphabet()  
+        alphabet = self.train_dataset.get_alphabet()
           
         # create a function to encode text  
         def encode_ascii(text):  

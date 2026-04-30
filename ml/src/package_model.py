@@ -7,7 +7,6 @@ from typing import Optional
 from src.models.rnn import HandwritingRNN
 from torch.quantization import quantize_dynamic
 from config.config import load_config, PROJECT_ROOT
-from src.data.dataloader import ProcessedHandwritingDataset
 from src.utils.paths import RunPaths, find_latest_checkpoint
 
 def package_model(checkpoint_path: Path, 
@@ -30,7 +29,7 @@ def package_model(checkpoint_path: Path,
     print(f"Loaded specified config from {config_path}")
 
     model_params = run_config.model_params 
-    alphabet_size = ProcessedHandwritingDataset.get_alphabet_size() 
+    alphabet_size = len(run_config.dataset.alphabet_string) + 1  # +1 for null token
     
     model = HandwritingRNN(
         lstm_size=model_params.lstm_size, 

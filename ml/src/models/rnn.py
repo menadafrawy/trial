@@ -8,7 +8,6 @@ import torch.nn.functional as F
 
 from config.config import Config
 from src.utils.text_utils import construct_alphabet_list, get_alphabet_map
-from src.data.dataloader import ProcessedHandwritingDataset  
 from .attention import AttentionMechanism  
 from .gmm import GMMLayer  
 
@@ -23,7 +22,7 @@ class HandwritingRNN(nn.Module):
                  lstm_size=400,   
                  output_mixture_components=20,   
                  attention_mixture_components=10,  
-                 alphabet_size = ProcessedHandwritingDataset.get_alphabet_size(), 
+                 alphabet_size: int = 29,
                  dropout_prob = 0.2
                  ):  
         super(HandwritingRNN, self).__init__()  

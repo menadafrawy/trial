@@ -131,7 +131,7 @@ def load_config(config_path: Union[str, Path, None] = None) -> Config:
         raise IsADirectoryError(f"Config path {final_config_path} is a directory")
     
     try: 
-        with open(final_config_path, 'r') as f:
+        with open(final_config_path, 'r', encoding='utf-8') as f:
             config_data = yaml.safe_load(f)
         
         if config_data is None:
