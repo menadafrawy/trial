@@ -1,0 +1,513 @@
+2026-04-30 00:28:48,208 - HandwritingTrainer - INFO - Updated training parameters: batch_size=64, learning_rate=0.001, beta1=0.9
+2026-04-30 00:28:48,209 - HandwritingTrainer - INFO - warm_start_step is None, attempting to load the latest checkpoint
+2026-04-30 00:28:48,209 - HandwritingTrainer - INFO - No checkpoints found, starting from scratch
+2026-04-30 00:28:48,209 - HandwritingTrainer - INFO - Starting training for 2223 epochs (45 steps per epoch)
+2026-04-30 00:29:20,596 - HandwritingTrainer - INFO - epoch 0, step 0: train loss (rank 0 current step): 4.048696 train loss (rank 0 recent avg): 4.048696, lr: 0.001000
+2026-04-30 00:31:01,602 - HandwritingTrainer - INFO - epoch 0, step 10: train loss (rank 0 current step): 2.252748 train loss (rank 0 recent avg): 3.007590, lr: 0.001000
+2026-04-30 00:32:42,162 - HandwritingTrainer - INFO - epoch 0, step 20: train loss (rank 0 current step): 1.696164 train loss (rank 0 recent avg): 2.489311, lr: 0.001000
+2026-04-30 00:34:22,528 - HandwritingTrainer - INFO - epoch 0, step 30: train loss (rank 0 current step): 1.114363 train loss (rank 0 recent avg): 2.124282, lr: 0.001000
+2026-04-30 00:36:01,986 - HandwritingTrainer - INFO - epoch 0, step 40: train loss (rank 0 current step): 0.873361 train loss (rank 0 recent avg): 1.856047, lr: 0.001000
+2026-04-30 00:37:31,412 - HandwritingTrainer - INFO - epoch 0 completed in 523.20s: train loss (global avg): 1.754090, val loss (global avg): 0.746219
+2026-04-30 00:37:31,512 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-46
+2026-04-30 00:38:41,303 - HandwritingTrainer - INFO - epoch 1, step 50: train loss (rank 0 current step): 0.882320 train loss (rank 0 recent avg): 1.664097, lr: 0.001000
+2026-04-30 00:40:20,612 - HandwritingTrainer - INFO - epoch 1, step 60: train loss (rank 0 current step): 0.682516 train loss (rank 0 recent avg): 1.514343, lr: 0.001000
+2026-04-30 00:41:58,786 - HandwritingTrainer - INFO - epoch 1, step 70: train loss (rank 0 current step): 0.654396 train loss (rank 0 recent avg): 1.384164, lr: 0.001000
+2026-04-30 00:43:37,486 - HandwritingTrainer - INFO - epoch 1, step 80: train loss (rank 0 current step): 0.511245 train loss (rank 0 recent avg): 1.278551, lr: 0.001000
+2026-04-30 00:45:15,986 - HandwritingTrainer - INFO - epoch 1, step 90: train loss (rank 0 current step): 0.414783 train loss (rank 0 recent avg): 1.191661, lr: 0.001000
+2026-04-30 00:46:05,386 - HandwritingTrainer - INFO - epoch 1 completed in 513.87s: train loss (global avg): 0.609987, val loss (global avg): 0.328825
+2026-04-30 00:46:05,477 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-92
+2026-04-30 00:47:53,862 - HandwritingTrainer - INFO - epoch 2, step 100: train loss (rank 0 current step): 0.314440 train loss (rank 0 recent avg): 1.087286, lr: 0.001000
+2026-04-30 00:49:33,186 - HandwritingTrainer - INFO - epoch 2, step 110: train loss (rank 0 current step): 0.318677 train loss (rank 0 recent avg): 0.835929, lr: 0.001000
+2026-04-30 00:51:12,078 - HandwritingTrainer - INFO - epoch 2, step 120: train loss (rank 0 current step): 0.263690 train loss (rank 0 recent avg): 0.672553, lr: 0.001000
+2026-04-30 00:52:51,062 - HandwritingTrainer - INFO - epoch 2, step 130: train loss (rank 0 current step): 0.200242 train loss (rank 0 recent avg): 0.563169, lr: 0.001000
+2026-04-30 00:54:40,736 - HandwritingTrainer - INFO - epoch 2 completed in 515.26s: train loss (global avg): 0.322653, val loss (global avg): 0.081700
+2026-04-30 00:54:40,828 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-138
+2026-04-30 00:55:30,678 - HandwritingTrainer - INFO - epoch 3, step 140: train loss (rank 0 current step): 0.185329 train loss (rank 0 recent avg): 0.480747, lr: 0.001000
+2026-04-30 00:57:08,677 - HandwritingTrainer - INFO - epoch 3, step 150: train loss (rank 0 current step): 0.214974 train loss (rank 0 recent avg): 0.412038, lr: 0.001000
+2026-04-30 00:58:46,736 - HandwritingTrainer - INFO - epoch 3, step 160: train loss (rank 0 current step): 0.133244 train loss (rank 0 recent avg): 0.353532, lr: 0.001000
+2026-04-30 01:00:25,486 - HandwritingTrainer - INFO - epoch 3, step 170: train loss (rank 0 current step): 0.057968 train loss (rank 0 recent avg): 0.309715, lr: 0.001000
+2026-04-30 01:02:05,077 - HandwritingTrainer - INFO - epoch 3, step 180: train loss (rank 0 current step): 0.193224 train loss (rank 0 recent avg): 0.269663, lr: 0.001000
+2026-04-30 01:03:14,586 - HandwritingTrainer - INFO - epoch 3 completed in 513.76s: train loss (global avg): 0.157727, val loss (global avg): -0.004321
+2026-04-30 01:03:14,686 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-184
+2026-04-30 01:04:44,478 - HandwritingTrainer - INFO - epoch 4, step 190: train loss (rank 0 current step): 0.082142 train loss (rank 0 recent avg): 0.230066, lr: 0.001000
+2026-04-30 01:06:24,086 - HandwritingTrainer - INFO - epoch 4, step 200: train loss (rank 0 current step): -0.048793 train loss (rank 0 recent avg): 0.194447, lr: 0.001000
+2026-04-30 01:08:03,312 - HandwritingTrainer - INFO - epoch 4, step 210: train loss (rank 0 current step): -0.025866 train loss (rank 0 recent avg): 0.157317, lr: 0.001000
+2026-04-30 01:09:44,012 - HandwritingTrainer - INFO - epoch 4, step 220: train loss (rank 0 current step): 0.086119 train loss (rank 0 recent avg): 0.133101, lr: 0.001000
+2026-04-30 01:11:53,102 - HandwritingTrainer - INFO - epoch 4 completed in 518.42s: train loss (global avg): 0.054523, val loss (global avg): -0.095458
+2026-04-30 01:11:53,186 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-230
+2026-04-30 01:12:23,578 - HandwritingTrainer - INFO - epoch 5, step 230: train loss (rank 0 current step): 0.070726 train loss (rank 0 recent avg): 0.112541, lr: 0.001000
+2026-04-30 01:14:02,436 - HandwritingTrainer - INFO - epoch 5, step 240: train loss (rank 0 current step): 0.028698 train loss (rank 0 recent avg): 0.091423, lr: 0.001000
+2026-04-30 01:15:42,302 - HandwritingTrainer - INFO - epoch 5, step 250: train loss (rank 0 current step): 0.010152 train loss (rank 0 recent avg): 0.072094, lr: 0.001000
+2026-04-30 01:17:21,478 - HandwritingTrainer - INFO - epoch 5, step 260: train loss (rank 0 current step): -0.079207 train loss (rank 0 recent avg): 0.052899, lr: 0.001000
+2026-04-30 01:19:00,302 - HandwritingTrainer - INFO - epoch 5, step 270: train loss (rank 0 current step): -0.084842 train loss (rank 0 recent avg): 0.035037, lr: 0.001000
+2026-04-30 01:20:29,352 - HandwritingTrainer - INFO - epoch 5 completed in 516.17s: train loss (global avg): -0.023106, val loss (global avg): -0.142106
+2026-04-30 01:20:29,436 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-276
+2026-04-30 01:21:39,612 - HandwritingTrainer - INFO - epoch 6, step 280: train loss (rank 0 current step): -0.162643 train loss (rank 0 recent avg): 0.012682, lr: 0.001000
+2026-04-30 01:23:17,452 - HandwritingTrainer - INFO - epoch 6, step 290: train loss (rank 0 current step): 0.083604 train loss (rank 0 recent avg): 0.001391, lr: 0.001000
+2026-04-30 01:24:55,952 - HandwritingTrainer - INFO - epoch 6, step 300: train loss (rank 0 current step): 0.014051 train loss (rank 0 recent avg): -0.009408, lr: 0.001000
+2026-04-30 01:26:34,236 - HandwritingTrainer - INFO - epoch 6, step 310: train loss (rank 0 current step): -0.099913 train loss (rank 0 recent avg): -0.022633, lr: 0.001000
+2026-04-30 01:28:11,912 - HandwritingTrainer - INFO - epoch 6, step 320: train loss (rank 0 current step): -0.061211 train loss (rank 0 recent avg): -0.035825, lr: 0.001000
+2026-04-30 01:29:01,422 - HandwritingTrainer - INFO - epoch 6 completed in 511.99s: train loss (global avg): -0.065464, val loss (global avg): -0.205487
+2026-04-30 01:29:01,512 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-322
+2026-04-30 01:30:50,978 - HandwritingTrainer - INFO - epoch 7, step 330: train loss (rank 0 current step): -0.011354 train loss (rank 0 recent avg): -0.051457, lr: 0.001000
+2026-04-30 01:32:29,352 - HandwritingTrainer - INFO - epoch 7, step 340: train loss (rank 0 current step): -0.194204 train loss (rank 0 recent avg): -0.063310, lr: 0.001000
+2026-04-30 01:34:07,912 - HandwritingTrainer - INFO - epoch 7, step 350: train loss (rank 0 current step): -0.095352 train loss (rank 0 recent avg): -0.074304, lr: 0.001000
+2026-04-30 01:35:46,262 - HandwritingTrainer - INFO - epoch 7, step 360: train loss (rank 0 current step): -0.074400 train loss (rank 0 recent avg): -0.082508, lr: 0.001000
+2026-04-30 01:37:34,286 - HandwritingTrainer - INFO - epoch 7 completed in 512.77s: train loss (global avg): -0.123057, val loss (global avg): -0.220401
+2026-04-30 01:37:34,362 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-368
+2026-04-30 01:38:24,512 - HandwritingTrainer - INFO - epoch 8, step 370: train loss (rank 0 current step): -0.001848 train loss (rank 0 recent avg): -0.092536, lr: 0.001000
+2026-04-30 01:40:02,778 - HandwritingTrainer - INFO - epoch 8, step 380: train loss (rank 0 current step): -0.129657 train loss (rank 0 recent avg): -0.095482, lr: 0.001000
+2026-04-30 01:41:40,886 - HandwritingTrainer - INFO - epoch 8, step 390: train loss (rank 0 current step): -0.008730 train loss (rank 0 recent avg): -0.103748, lr: 0.001000
+2026-04-30 01:43:19,102 - HandwritingTrainer - INFO - epoch 8, step 400: train loss (rank 0 current step): -0.133205 train loss (rank 0 recent avg): -0.113251, lr: 0.001000
+2026-04-30 01:44:57,702 - HandwritingTrainer - INFO - epoch 8, step 410: train loss (rank 0 current step): -0.143792 train loss (rank 0 recent avg): -0.115737, lr: 0.001000
+2026-04-30 01:46:07,052 - HandwritingTrainer - INFO - epoch 8 completed in 512.69s: train loss (global avg): -0.121864, val loss (global avg): -0.286177
+2026-04-30 01:46:07,136 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-414
+2026-04-30 01:47:37,552 - HandwritingTrainer - INFO - epoch 9, step 420: train loss (rank 0 current step): -0.184151 train loss (rank 0 recent avg): -0.123684, lr: 0.001000
+2026-04-30 01:49:16,936 - HandwritingTrainer - INFO - epoch 9, step 430: train loss (rank 0 current step): -0.183076 train loss (rank 0 recent avg): -0.128245, lr: 0.001000
+2026-04-30 01:50:56,412 - HandwritingTrainer - INFO - epoch 9, step 440: train loss (rank 0 current step): -0.254783 train loss (rank 0 recent avg): -0.135336, lr: 0.001000
+2026-04-30 01:52:35,362 - HandwritingTrainer - INFO - epoch 9, step 450: train loss (rank 0 current step): -0.121398 train loss (rank 0 recent avg): -0.141458, lr: 0.001000
+2026-04-30 01:54:45,012 - HandwritingTrainer - INFO - epoch 9 completed in 517.88s: train loss (global avg): -0.177132, val loss (global avg): -0.307000
+2026-04-30 01:54:45,102 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-460
+2026-04-30 01:55:15,302 - HandwritingTrainer - INFO - epoch 10, step 460: train loss (rank 0 current step): -0.125188 train loss (rank 0 recent avg): -0.150280, lr: 0.001000
+2026-04-30 01:56:54,036 - HandwritingTrainer - INFO - epoch 10, step 470: train loss (rank 0 current step): -0.184349 train loss (rank 0 recent avg): -0.155721, lr: 0.001000
+2026-04-30 01:58:33,677 - HandwritingTrainer - INFO - epoch 10, step 480: train loss (rank 0 current step): -0.167118 train loss (rank 0 recent avg): -0.162847, lr: 0.001000
+2026-04-30 02:00:13,062 - HandwritingTrainer - INFO - epoch 10, step 490: train loss (rank 0 current step): -0.148398 train loss (rank 0 recent avg): -0.172175, lr: 0.001000
+2026-04-30 02:01:51,178 - HandwritingTrainer - INFO - epoch 10, step 500: train loss (rank 0 current step): -0.268133 train loss (rank 0 recent avg): -0.181774, lr: 0.001000
+2026-04-30 02:03:19,736 - HandwritingTrainer - INFO - epoch 10 completed in 514.63s: train loss (global avg): -0.201755, val loss (global avg): -0.331780
+2026-04-30 02:03:19,827 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-506
+2026-04-30 02:04:29,552 - HandwritingTrainer - INFO - epoch 11, step 510: train loss (rank 0 current step): -0.080525 train loss (rank 0 recent avg): -0.190539, lr: 0.001000
+2026-04-30 02:06:07,686 - HandwritingTrainer - INFO - epoch 11, step 520: train loss (rank 0 current step): -0.163629 train loss (rank 0 recent avg): -0.196994, lr: 0.001000
+2026-04-30 02:07:46,536 - HandwritingTrainer - INFO - epoch 11, step 530: train loss (rank 0 current step): -0.199137 train loss (rank 0 recent avg): -0.204499, lr: 0.001000
+2026-04-30 02:09:25,086 - HandwritingTrainer - INFO - epoch 11, step 540: train loss (rank 0 current step): -0.191899 train loss (rank 0 recent avg): -0.208517, lr: 0.001000
+2026-04-30 02:11:03,852 - HandwritingTrainer - INFO - epoch 11, step 550: train loss (rank 0 current step): -0.232495 train loss (rank 0 recent avg): -0.213760, lr: 0.001000
+2026-04-30 02:11:53,402 - HandwritingTrainer - INFO - epoch 11 completed in 513.57s: train loss (global avg): -0.219354, val loss (global avg): -0.288153
+2026-04-30 02:13:43,186 - HandwritingTrainer - INFO - epoch 12, step 560: train loss (rank 0 current step): -0.232729 train loss (rank 0 recent avg): -0.209188, lr: 0.001000
+2026-04-30 02:15:22,052 - HandwritingTrainer - INFO - epoch 12, step 570: train loss (rank 0 current step): -0.195007 train loss (rank 0 recent avg): -0.211403, lr: 0.001000
+2026-04-30 02:17:00,378 - HandwritingTrainer - INFO - epoch 12, step 580: train loss (rank 0 current step): -0.252901 train loss (rank 0 recent avg): -0.211858, lr: 0.001000
+2026-04-30 02:18:38,462 - HandwritingTrainer - INFO - epoch 12, step 590: train loss (rank 0 current step): -0.124786 train loss (rank 0 recent avg): -0.217903, lr: 0.001000
+2026-04-30 02:20:26,602 - HandwritingTrainer - INFO - epoch 12 completed in 513.20s: train loss (global avg): -0.212518, val loss (global avg): -0.314522
+2026-04-30 02:21:16,527 - HandwritingTrainer - INFO - epoch 13, step 600: train loss (rank 0 current step): -0.343367 train loss (rank 0 recent avg): -0.217556, lr: 0.001000
+2026-04-30 02:22:56,186 - HandwritingTrainer - INFO - epoch 13, step 610: train loss (rank 0 current step): -0.247454 train loss (rank 0 recent avg): -0.220876, lr: 0.001000
+2026-04-30 02:24:34,752 - HandwritingTrainer - INFO - epoch 13, step 620: train loss (rank 0 current step): -0.218061 train loss (rank 0 recent avg): -0.228154, lr: 0.001000
+2026-04-30 02:26:14,027 - HandwritingTrainer - INFO - epoch 13, step 630: train loss (rank 0 current step): -0.240931 train loss (rank 0 recent avg): -0.231872, lr: 0.001000
+2026-04-30 02:27:52,952 - HandwritingTrainer - INFO - epoch 13, step 640: train loss (rank 0 current step): -0.283187 train loss (rank 0 recent avg): -0.236935, lr: 0.001000
+2026-04-30 02:29:01,927 - HandwritingTrainer - INFO - epoch 13 completed in 515.33s: train loss (global avg): -0.275235, val loss (global avg): -0.315731
+2026-04-30 02:30:31,136 - HandwritingTrainer - INFO - epoch 14, step 650: train loss (rank 0 current step): -0.225068 train loss (rank 0 recent avg): -0.237798, lr: 0.001000
+2026-04-30 02:32:09,678 - HandwritingTrainer - INFO - epoch 14, step 660: train loss (rank 0 current step): -0.155586 train loss (rank 0 recent avg): -0.247203, lr: 0.001000
+2026-04-30 02:33:47,662 - HandwritingTrainer - INFO - epoch 14, step 670: train loss (rank 0 current step): -0.303259 train loss (rank 0 recent avg): -0.256049, lr: 0.001000
+2026-04-30 02:35:26,512 - HandwritingTrainer - INFO - epoch 14, step 680: train loss (rank 0 current step): -0.308167 train loss (rank 0 recent avg): -0.267708, lr: 0.001000
+2026-04-30 02:37:35,077 - HandwritingTrainer - INFO - epoch 14 completed in 513.15s: train loss (global avg): -0.270726, val loss (global avg): -0.357748
+2026-04-30 02:37:35,162 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-690
+2026-04-30 02:38:05,536 - HandwritingTrainer - INFO - epoch 15, step 690: train loss (rank 0 current step): -0.310210 train loss (rank 0 recent avg): -0.269111, lr: 0.001000
+2026-04-30 02:39:44,186 - HandwritingTrainer - INFO - epoch 15, step 700: train loss (rank 0 current step): -0.228178 train loss (rank 0 recent avg): -0.275225, lr: 0.001000
+2026-04-30 02:41:23,402 - HandwritingTrainer - INFO - epoch 15, step 710: train loss (rank 0 current step): -0.291820 train loss (rank 0 recent avg): -0.279448, lr: 0.001000
+2026-04-30 02:43:02,436 - HandwritingTrainer - INFO - epoch 15, step 720: train loss (rank 0 current step): -0.330539 train loss (rank 0 recent avg): -0.277974, lr: 0.001000
+2026-04-30 02:44:41,736 - HandwritingTrainer - INFO - epoch 15, step 730: train loss (rank 0 current step): -0.329207 train loss (rank 0 recent avg): -0.281783, lr: 0.001000
+2026-04-30 02:46:10,728 - HandwritingTrainer - INFO - epoch 15 completed in 515.57s: train loss (global avg): -0.281142, val loss (global avg): -0.376869
+2026-04-30 02:46:10,812 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-736
+2026-04-30 02:47:20,436 - HandwritingTrainer - INFO - epoch 16, step 740: train loss (rank 0 current step): -0.186872 train loss (rank 0 recent avg): -0.277685, lr: 0.001000
+2026-04-30 02:48:59,112 - HandwritingTrainer - INFO - epoch 16, step 750: train loss (rank 0 current step): -0.235438 train loss (rank 0 recent avg): -0.285589, lr: 0.001000
+2026-04-30 02:50:37,086 - HandwritingTrainer - INFO - epoch 16, step 760: train loss (rank 0 current step): -0.296107 train loss (rank 0 recent avg): -0.291574, lr: 0.001000
+2026-04-30 02:52:15,436 - HandwritingTrainer - INFO - epoch 16, step 770: train loss (rank 0 current step): -0.312931 train loss (rank 0 recent avg): -0.291409, lr: 0.001000
+2026-04-30 02:53:53,752 - HandwritingTrainer - INFO - epoch 16, step 780: train loss (rank 0 current step): -0.333800 train loss (rank 0 recent avg): -0.291906, lr: 0.001000
+2026-04-30 02:54:43,228 - HandwritingTrainer - INFO - epoch 16 completed in 512.42s: train loss (global avg): -0.305610, val loss (global avg): -0.357265
+2026-04-30 02:56:32,036 - HandwritingTrainer - INFO - epoch 17, step 790: train loss (rank 0 current step): -0.318892 train loss (rank 0 recent avg): -0.290657, lr: 0.001000
+2026-04-30 02:58:10,662 - HandwritingTrainer - INFO - epoch 17, step 800: train loss (rank 0 current step): -0.237578 train loss (rank 0 recent avg): -0.293470, lr: 0.001000
+2026-04-30 02:59:49,712 - HandwritingTrainer - INFO - epoch 17, step 810: train loss (rank 0 current step): -0.341823 train loss (rank 0 recent avg): -0.296400, lr: 0.001000
+2026-04-30 03:01:28,486 - HandwritingTrainer - INFO - epoch 17, step 820: train loss (rank 0 current step): -0.370543 train loss (rank 0 recent avg): -0.298292, lr: 0.001000
+2026-04-30 03:03:17,378 - HandwritingTrainer - INFO - epoch 17 completed in 514.15s: train loss (global avg): -0.314008, val loss (global avg): -0.327993
+2026-04-30 03:04:07,278 - HandwritingTrainer - INFO - epoch 18, step 830: train loss (rank 0 current step): -0.232623 train loss (rank 0 recent avg): -0.300647, lr: 0.001000
+2026-04-30 03:05:46,302 - HandwritingTrainer - INFO - epoch 18, step 840: train loss (rank 0 current step): -0.268350 train loss (rank 0 recent avg): -0.302031, lr: 0.001000
+2026-04-30 03:07:25,062 - HandwritingTrainer - INFO - epoch 18, step 850: train loss (rank 0 current step): -0.390684 train loss (rank 0 recent avg): -0.302676, lr: 0.001000
+2026-04-30 03:09:03,577 - HandwritingTrainer - INFO - epoch 18, step 860: train loss (rank 0 current step): -0.288945 train loss (rank 0 recent avg): -0.303047, lr: 0.001000
+2026-04-30 03:10:42,712 - HandwritingTrainer - INFO - epoch 18, step 870: train loss (rank 0 current step): -0.420115 train loss (rank 0 recent avg): -0.309142, lr: 0.001000
+2026-04-30 03:11:52,028 - HandwritingTrainer - INFO - epoch 18 completed in 514.65s: train loss (global avg): -0.300403, val loss (global avg): -0.321640
+2026-04-30 03:13:21,062 - HandwritingTrainer - INFO - epoch 19, step 880: train loss (rank 0 current step): -0.242549 train loss (rank 0 recent avg): -0.305346, lr: 0.001000
+2026-04-30 03:14:59,178 - HandwritingTrainer - INFO - epoch 19, step 890: train loss (rank 0 current step): -0.340564 train loss (rank 0 recent avg): -0.306954, lr: 0.001000
+2026-04-30 03:16:37,802 - HandwritingTrainer - INFO - epoch 19, step 900: train loss (rank 0 current step): -0.437484 train loss (rank 0 recent avg): -0.310055, lr: 0.001000
+2026-04-30 03:18:16,162 - HandwritingTrainer - INFO - epoch 19, step 910: train loss (rank 0 current step): -0.347900 train loss (rank 0 recent avg): -0.314052, lr: 0.001000
+2026-04-30 03:20:25,278 - HandwritingTrainer - INFO - epoch 19 completed in 513.25s: train loss (global avg): -0.320651, val loss (global avg): -0.432119
+2026-04-30 03:20:25,362 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-920
+2026-04-30 03:20:55,628 - HandwritingTrainer - INFO - epoch 20, step 920: train loss (rank 0 current step): -0.363645 train loss (rank 0 recent avg): -0.315124, lr: 0.001000
+2026-04-30 03:22:35,412 - HandwritingTrainer - INFO - epoch 20, step 930: train loss (rank 0 current step): -0.333092 train loss (rank 0 recent avg): -0.317610, lr: 0.001000
+2026-04-30 03:24:14,786 - HandwritingTrainer - INFO - epoch 20, step 940: train loss (rank 0 current step): -0.372577 train loss (rank 0 recent avg): -0.323055, lr: 0.001000
+2026-04-30 03:25:54,886 - HandwritingTrainer - INFO - epoch 20, step 950: train loss (rank 0 current step): -0.324431 train loss (rank 0 recent avg): -0.323514, lr: 0.001000
+2026-04-30 03:27:34,086 - HandwritingTrainer - INFO - epoch 20, step 960: train loss (rank 0 current step): -0.347596 train loss (rank 0 recent avg): -0.323908, lr: 0.001000
+2026-04-30 03:29:02,886 - HandwritingTrainer - INFO - epoch 20 completed in 517.52s: train loss (global avg): -0.323741, val loss (global avg): -0.427508
+2026-04-30 03:30:12,812 - HandwritingTrainer - INFO - epoch 21, step 970: train loss (rank 0 current step): -0.359559 train loss (rank 0 recent avg): -0.320260, lr: 0.001000
+2026-04-30 03:31:50,952 - HandwritingTrainer - INFO - epoch 21, step 980: train loss (rank 0 current step): -0.368298 train loss (rank 0 recent avg): -0.329613, lr: 0.001000
+2026-04-30 03:33:30,086 - HandwritingTrainer - INFO - epoch 21, step 990: train loss (rank 0 current step): -0.373588 train loss (rank 0 recent avg): -0.335747, lr: 0.001000
+2026-04-30 03:35:08,662 - HandwritingTrainer - INFO - epoch 21, step 1000: train loss (rank 0 current step): -0.472443 train loss (rank 0 recent avg): -0.342008, lr: 0.001000
+2026-04-30 03:36:47,886 - HandwritingTrainer - INFO - epoch 21, step 1010: train loss (rank 0 current step): -0.352102 train loss (rank 0 recent avg): -0.342347, lr: 0.001000
+2026-04-30 03:37:37,402 - HandwritingTrainer - INFO - epoch 21 completed in 514.52s: train loss (global avg): -0.370133, val loss (global avg): -0.449677
+2026-04-30 03:37:37,486 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1012
+2026-04-30 03:39:27,136 - HandwritingTrainer - INFO - epoch 22, step 1020: train loss (rank 0 current step): -0.366613 train loss (rank 0 recent avg): -0.347894, lr: 0.001000
+2026-04-30 03:41:06,712 - HandwritingTrainer - INFO - epoch 22, step 1030: train loss (rank 0 current step): -0.361829 train loss (rank 0 recent avg): -0.350320, lr: 0.001000
+2026-04-30 03:42:45,886 - HandwritingTrainer - INFO - epoch 22, step 1040: train loss (rank 0 current step): -0.370796 train loss (rank 0 recent avg): -0.354882, lr: 0.001000
+2026-04-30 03:44:24,836 - HandwritingTrainer - INFO - epoch 22, step 1050: train loss (rank 0 current step): -0.478835 train loss (rank 0 recent avg): -0.364661, lr: 0.001000
+2026-04-30 03:46:14,352 - HandwritingTrainer - INFO - epoch 22 completed in 516.87s: train loss (global avg): -0.377585, val loss (global avg): -0.486165
+2026-04-30 03:46:14,436 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1058
+2026-04-30 03:47:04,786 - HandwritingTrainer - INFO - epoch 23, step 1060: train loss (rank 0 current step): -0.337164 train loss (rank 0 recent avg): -0.369196, lr: 0.001000
+2026-04-30 03:48:44,502 - HandwritingTrainer - INFO - epoch 23, step 1070: train loss (rank 0 current step): -0.511940 train loss (rank 0 recent avg): -0.374688, lr: 0.001000
+2026-04-30 03:50:24,528 - HandwritingTrainer - INFO - epoch 23, step 1080: train loss (rank 0 current step): -0.380708 train loss (rank 0 recent avg): -0.376740, lr: 0.001000
+2026-04-30 03:52:04,528 - HandwritingTrainer - INFO - epoch 23, step 1090: train loss (rank 0 current step): -0.385327 train loss (rank 0 recent avg): -0.383923, lr: 0.001000
+2026-04-30 03:53:43,936 - HandwritingTrainer - INFO - epoch 23, step 1100: train loss (rank 0 current step): -0.470403 train loss (rank 0 recent avg): -0.386655, lr: 0.001000
+2026-04-30 03:54:53,912 - HandwritingTrainer - INFO - epoch 23 completed in 519.48s: train loss (global avg): -0.403311, val loss (global avg): -0.534289
+2026-04-30 03:54:54,012 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1104
+2026-04-30 03:56:24,912 - HandwritingTrainer - INFO - epoch 24, step 1110: train loss (rank 0 current step): -0.489027 train loss (rank 0 recent avg): -0.393424, lr: 0.001000
+2026-04-30 03:58:04,762 - HandwritingTrainer - INFO - epoch 24, step 1120: train loss (rank 0 current step): -0.468151 train loss (rank 0 recent avg): -0.401003, lr: 0.001000
+2026-04-30 03:59:43,836 - HandwritingTrainer - INFO - epoch 24, step 1130: train loss (rank 0 current step): -0.251843 train loss (rank 0 recent avg): -0.407803, lr: 0.001000
+2026-04-30 04:01:23,362 - HandwritingTrainer - INFO - epoch 24, step 1140: train loss (rank 0 current step): -0.287839 train loss (rank 0 recent avg): -0.403854, lr: 0.001000
+2026-04-30 04:03:33,278 - HandwritingTrainer - INFO - epoch 24 completed in 519.27s: train loss (global avg): -0.398117, val loss (global avg): -0.440323
+2026-04-30 04:04:03,628 - HandwritingTrainer - INFO - epoch 25, step 1150: train loss (rank 0 current step): -0.366144 train loss (rank 0 recent avg): -0.398251, lr: 0.001000
+2026-04-30 04:05:43,278 - HandwritingTrainer - INFO - epoch 25, step 1160: train loss (rank 0 current step): -0.220019 train loss (rank 0 recent avg): -0.394248, lr: 0.001000
+2026-04-30 04:07:22,628 - HandwritingTrainer - INFO - epoch 25, step 1170: train loss (rank 0 current step): -0.346608 train loss (rank 0 recent avg): -0.391654, lr: 0.001000
+2026-04-30 04:09:01,386 - HandwritingTrainer - INFO - epoch 25, step 1180: train loss (rank 0 current step): -0.433161 train loss (rank 0 recent avg): -0.391828, lr: 0.001000
+2026-04-30 04:10:40,636 - HandwritingTrainer - INFO - epoch 25, step 1190: train loss (rank 0 current step): -0.415316 train loss (rank 0 recent avg): -0.395130, lr: 0.001000
+2026-04-30 04:12:09,802 - HandwritingTrainer - INFO - epoch 25 completed in 516.52s: train loss (global avg): -0.391269, val loss (global avg): -0.544792
+2026-04-30 04:12:09,886 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1196
+2026-04-30 04:13:19,877 - HandwritingTrainer - INFO - epoch 26, step 1200: train loss (rank 0 current step): -0.337480 train loss (rank 0 recent avg): -0.399723, lr: 0.001000
+2026-04-30 04:15:04,868 - HandwritingTrainer - INFO - epoch 26, step 1210: train loss (rank 0 current step): -0.375658 train loss (rank 0 recent avg): -0.395767, lr: 0.001000
+2026-04-30 04:16:47,236 - HandwritingTrainer - INFO - epoch 26, step 1220: train loss (rank 0 current step): -0.454743 train loss (rank 0 recent avg): -0.393227, lr: 0.001000
+2026-04-30 04:18:26,478 - HandwritingTrainer - INFO - epoch 26, step 1230: train loss (rank 0 current step): -0.341729 train loss (rank 0 recent avg): -0.392063, lr: 0.001000
+2026-04-30 04:20:05,312 - HandwritingTrainer - INFO - epoch 26, step 1240: train loss (rank 0 current step): -0.281165 train loss (rank 0 recent avg): -0.397120, lr: 0.001000
+2026-04-30 04:20:55,077 - HandwritingTrainer - INFO - epoch 26 completed in 525.19s: train loss (global avg): -0.408660, val loss (global avg): -0.463127
+2026-04-30 04:22:45,112 - HandwritingTrainer - INFO - epoch 27, step 1250: train loss (rank 0 current step): -0.377094 train loss (rank 0 recent avg): -0.397521, lr: 0.001000
+2026-04-30 04:24:24,727 - HandwritingTrainer - INFO - epoch 27, step 1260: train loss (rank 0 current step): -0.290325 train loss (rank 0 recent avg): -0.398446, lr: 0.001000
+2026-04-30 04:26:04,052 - HandwritingTrainer - INFO - epoch 27, step 1270: train loss (rank 0 current step): -0.537575 train loss (rank 0 recent avg): -0.407170, lr: 0.001000
+2026-04-30 04:27:43,078 - HandwritingTrainer - INFO - epoch 27, step 1280: train loss (rank 0 current step): -0.235781 train loss (rank 0 recent avg): -0.407419, lr: 0.001000
+2026-04-30 04:29:32,386 - HandwritingTrainer - INFO - epoch 27 completed in 517.31s: train loss (global avg): -0.389201, val loss (global avg): -0.434647
+2026-04-30 04:30:22,412 - HandwritingTrainer - INFO - epoch 28, step 1290: train loss (rank 0 current step): -0.472982 train loss (rank 0 recent avg): -0.406146, lr: 0.001000
+2026-04-30 04:32:01,702 - HandwritingTrainer - INFO - epoch 28, step 1300: train loss (rank 0 current step): -0.373643 train loss (rank 0 recent avg): -0.398199, lr: 0.001000
+2026-04-30 04:33:41,562 - HandwritingTrainer - INFO - epoch 28, step 1310: train loss (rank 0 current step): -0.242125 train loss (rank 0 recent avg): -0.391841, lr: 0.001000
+2026-04-30 04:35:21,086 - HandwritingTrainer - INFO - epoch 28, step 1320: train loss (rank 0 current step): -0.358269 train loss (rank 0 recent avg): -0.384327, lr: 0.001000
+2026-04-30 04:37:00,878 - HandwritingTrainer - INFO - epoch 28, step 1330: train loss (rank 0 current step): -0.414959 train loss (rank 0 recent avg): -0.381786, lr: 0.001000
+2026-04-30 04:38:10,302 - HandwritingTrainer - INFO - epoch 28 completed in 517.92s: train loss (global avg): -0.384090, val loss (global avg): -0.527231
+2026-04-30 04:39:40,136 - HandwritingTrainer - INFO - epoch 29, step 1340: train loss (rank 0 current step): -0.563565 train loss (rank 0 recent avg): -0.391650, lr: 0.001000
+2026-04-30 04:41:18,828 - HandwritingTrainer - INFO - epoch 29, step 1350: train loss (rank 0 current step): -0.448758 train loss (rank 0 recent avg): -0.397508, lr: 0.001000
+2026-04-30 04:42:57,312 - HandwritingTrainer - INFO - epoch 29, step 1360: train loss (rank 0 current step): -0.443614 train loss (rank 0 recent avg): -0.410331, lr: 0.001000
+2026-04-30 04:44:36,736 - HandwritingTrainer - INFO - epoch 29, step 1370: train loss (rank 0 current step): -0.669354 train loss (rank 0 recent avg): -0.419633, lr: 0.001000
+2026-04-30 04:46:45,302 - HandwritingTrainer - INFO - epoch 29 completed in 515.00s: train loss (global avg): -0.470741, val loss (global avg): -0.471081
+2026-04-30 04:47:15,578 - HandwritingTrainer - INFO - epoch 30, step 1380: train loss (rank 0 current step): -0.361249 train loss (rank 0 recent avg): -0.426586, lr: 0.001000
+2026-04-30 04:48:54,269 - HandwritingTrainer - INFO - epoch 30, step 1390: train loss (rank 0 current step): -0.402756 train loss (rank 0 recent avg): -0.424481, lr: 0.001000
+2026-04-30 04:50:33,552 - HandwritingTrainer - INFO - epoch 30, step 1400: train loss (rank 0 current step): -0.414412 train loss (rank 0 recent avg): -0.427371, lr: 0.001000
+2026-04-30 04:52:12,886 - HandwritingTrainer - INFO - epoch 30, step 1410: train loss (rank 0 current step): -0.450434 train loss (rank 0 recent avg): -0.434694, lr: 0.001000
+2026-04-30 04:53:51,162 - HandwritingTrainer - INFO - epoch 30, step 1420: train loss (rank 0 current step): -0.475306 train loss (rank 0 recent avg): -0.441402, lr: 0.001000
+2026-04-30 04:55:20,177 - HandwritingTrainer - INFO - epoch 30 completed in 514.88s: train loss (global avg): -0.408141, val loss (global avg): -0.487107
+2026-04-30 04:56:29,802 - HandwritingTrainer - INFO - epoch 31, step 1430: train loss (rank 0 current step): -0.282794 train loss (rank 0 recent avg): -0.439331, lr: 0.001000
+2026-04-30 04:58:08,012 - HandwritingTrainer - INFO - epoch 31, step 1440: train loss (rank 0 current step): -0.412757 train loss (rank 0 recent avg): -0.431283, lr: 0.001000
+2026-04-30 04:59:47,086 - HandwritingTrainer - INFO - epoch 31, step 1450: train loss (rank 0 current step): -0.254623 train loss (rank 0 recent avg): -0.424121, lr: 0.001000
+2026-04-30 05:01:26,886 - HandwritingTrainer - INFO - epoch 31, step 1460: train loss (rank 0 current step): -0.402393 train loss (rank 0 recent avg): -0.423561, lr: 0.001000
+2026-04-30 05:03:05,278 - HandwritingTrainer - INFO - epoch 31, step 1470: train loss (rank 0 current step): -0.345631 train loss (rank 0 recent avg): -0.415972, lr: 0.001000
+2026-04-30 05:03:55,386 - HandwritingTrainer - INFO - epoch 31 completed in 515.21s: train loss (global avg): -0.410843, val loss (global avg): -0.496257
+2026-04-30 05:05:45,286 - HandwritingTrainer - INFO - epoch 32, step 1480: train loss (rank 0 current step): -0.458896 train loss (rank 0 recent avg): -0.410987, lr: 0.001000
+2026-04-30 05:07:23,977 - HandwritingTrainer - INFO - epoch 32, step 1490: train loss (rank 0 current step): -0.478271 train loss (rank 0 recent avg): -0.413991, lr: 0.001000
+2026-04-30 05:09:04,136 - HandwritingTrainer - INFO - epoch 32, step 1500: train loss (rank 0 current step): -0.331614 train loss (rank 0 recent avg): -0.415126, lr: 0.001000
+2026-04-30 05:10:43,212 - HandwritingTrainer - INFO - epoch 32, step 1510: train loss (rank 0 current step): -0.408649 train loss (rank 0 recent avg): -0.417167, lr: 0.001000
+2026-04-30 05:12:31,652 - HandwritingTrainer - INFO - epoch 32 completed in 516.27s: train loss (global avg): -0.435906, val loss (global avg): -0.527444
+2026-04-30 05:13:22,186 - HandwritingTrainer - INFO - epoch 33, step 1520: train loss (rank 0 current step): -0.583969 train loss (rank 0 recent avg): -0.423217, lr: 0.001000
+2026-04-30 05:15:02,036 - HandwritingTrainer - INFO - epoch 33, step 1530: train loss (rank 0 current step): -0.448368 train loss (rank 0 recent avg): -0.434766, lr: 0.001000
+2026-04-30 05:16:41,562 - HandwritingTrainer - INFO - epoch 33, step 1540: train loss (rank 0 current step): -0.522808 train loss (rank 0 recent avg): -0.444544, lr: 0.001000
+2026-04-30 05:18:21,362 - HandwritingTrainer - INFO - epoch 33, step 1550: train loss (rank 0 current step): -0.524823 train loss (rank 0 recent avg): -0.458891, lr: 0.001000
+2026-04-30 05:20:01,112 - HandwritingTrainer - INFO - epoch 33, step 1560: train loss (rank 0 current step): -0.584463 train loss (rank 0 recent avg): -0.467836, lr: 0.001000
+2026-04-30 05:21:10,252 - HandwritingTrainer - INFO - epoch 33 completed in 518.60s: train loss (global avg): -0.514876, val loss (global avg): -0.619114
+2026-04-30 05:21:10,327 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1564
+2026-04-30 05:22:39,386 - HandwritingTrainer - INFO - epoch 34, step 1570: train loss (rank 0 current step): -0.556195 train loss (rank 0 recent avg): -0.476477, lr: 0.001000
+2026-04-30 05:24:17,612 - HandwritingTrainer - INFO - epoch 34, step 1580: train loss (rank 0 current step): -0.505968 train loss (rank 0 recent avg): -0.485798, lr: 0.001000
+2026-04-30 05:25:56,702 - HandwritingTrainer - INFO - epoch 34, step 1590: train loss (rank 0 current step): -0.403383 train loss (rank 0 recent avg): -0.485297, lr: 0.001000
+2026-04-30 05:27:35,502 - HandwritingTrainer - INFO - epoch 34, step 1600: train loss (rank 0 current step): -0.411423 train loss (rank 0 recent avg): -0.481839, lr: 0.001000
+2026-04-30 05:29:43,436 - HandwritingTrainer - INFO - epoch 34 completed in 513.11s: train loss (global avg): -0.454098, val loss (global avg): -0.548313
+2026-04-30 05:30:13,702 - HandwritingTrainer - INFO - epoch 35, step 1610: train loss (rank 0 current step): -0.377273 train loss (rank 0 recent avg): -0.481655, lr: 0.001000
+2026-04-30 05:31:51,512 - HandwritingTrainer - INFO - epoch 35, step 1620: train loss (rank 0 current step): -0.438800 train loss (rank 0 recent avg): -0.480132, lr: 0.001000
+2026-04-30 05:33:29,912 - HandwritingTrainer - INFO - epoch 35, step 1630: train loss (rank 0 current step): -0.431900 train loss (rank 0 recent avg): -0.479309, lr: 0.001000
+2026-04-30 05:35:08,612 - HandwritingTrainer - INFO - epoch 35, step 1640: train loss (rank 0 current step): -0.472659 train loss (rank 0 recent avg): -0.477655, lr: 0.001000
+2026-04-30 05:36:47,836 - HandwritingTrainer - INFO - epoch 35, step 1650: train loss (rank 0 current step): -0.589372 train loss (rank 0 recent avg): -0.479309, lr: 0.001000
+2026-04-30 05:38:16,752 - HandwritingTrainer - INFO - epoch 35 completed in 513.32s: train loss (global avg): -0.481057, val loss (global avg): -0.443490
+2026-04-30 05:39:26,952 - HandwritingTrainer - INFO - epoch 36, step 1660: train loss (rank 0 current step): -0.400435 train loss (rank 0 recent avg): -0.467002, lr: 0.001000
+2026-04-30 05:41:07,086 - HandwritingTrainer - INFO - epoch 36, step 1670: train loss (rank 0 current step): -0.327915 train loss (rank 0 recent avg): -0.454104, lr: 0.001000
+2026-04-30 05:42:46,012 - HandwritingTrainer - INFO - epoch 36, step 1680: train loss (rank 0 current step): -0.438646 train loss (rank 0 recent avg): -0.449636, lr: 0.001000
+2026-04-30 05:44:24,886 - HandwritingTrainer - INFO - epoch 36, step 1690: train loss (rank 0 current step): -0.497124 train loss (rank 0 recent avg): -0.453183, lr: 0.001000
+2026-04-30 05:46:03,386 - HandwritingTrainer - INFO - epoch 36, step 1700: train loss (rank 0 current step): -0.428956 train loss (rank 0 recent avg): -0.465503, lr: 0.001000
+2026-04-30 05:46:52,762 - HandwritingTrainer - INFO - epoch 36 completed in 516.01s: train loss (global avg): -0.454425, val loss (global avg): -0.578545
+2026-04-30 05:48:41,762 - HandwritingTrainer - INFO - epoch 37, step 1710: train loss (rank 0 current step): -0.608001 train loss (rank 0 recent avg): -0.474972, lr: 0.001000
+2026-04-30 05:50:20,152 - HandwritingTrainer - INFO - epoch 37, step 1720: train loss (rank 0 current step): -0.569805 train loss (rank 0 recent avg): -0.480559, lr: 0.001000
+2026-04-30 05:51:58,312 - HandwritingTrainer - INFO - epoch 37, step 1730: train loss (rank 0 current step): -0.490107 train loss (rank 0 recent avg): -0.479838, lr: 0.001000
+2026-04-30 05:53:37,062 - HandwritingTrainer - INFO - epoch 37, step 1740: train loss (rank 0 current step): -0.595298 train loss (rank 0 recent avg): -0.486422, lr: 0.001000
+2026-04-30 05:55:25,802 - HandwritingTrainer - INFO - epoch 37 completed in 513.04s: train loss (global avg): -0.522330, val loss (global avg): -0.484301
+2026-04-30 05:56:15,728 - HandwritingTrainer - INFO - epoch 38, step 1750: train loss (rank 0 current step): -0.376539 train loss (rank 0 recent avg): -0.487285, lr: 0.001000
+2026-04-30 05:57:53,662 - HandwritingTrainer - INFO - epoch 38, step 1760: train loss (rank 0 current step): -0.387186 train loss (rank 0 recent avg): -0.494351, lr: 0.001000
+2026-04-30 05:59:31,312 - HandwritingTrainer - INFO - epoch 38, step 1770: train loss (rank 0 current step): -0.591519 train loss (rank 0 recent avg): -0.505575, lr: 0.001000
+2026-04-30 06:01:09,578 - HandwritingTrainer - INFO - epoch 38, step 1780: train loss (rank 0 current step): -0.538924 train loss (rank 0 recent avg): -0.515842, lr: 0.001000
+2026-04-30 06:02:47,902 - HandwritingTrainer - INFO - epoch 38, step 1790: train loss (rank 0 current step): -0.503348 train loss (rank 0 recent avg): -0.520422, lr: 0.001000
+2026-04-30 06:03:57,128 - HandwritingTrainer - INFO - epoch 38 completed in 511.33s: train loss (global avg): -0.511120, val loss (global avg): -0.634844
+2026-04-30 06:03:57,212 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1794
+2026-04-30 06:05:27,252 - HandwritingTrainer - INFO - epoch 39, step 1800: train loss (rank 0 current step): -0.550638 train loss (rank 0 recent avg): -0.518400, lr: 0.001000
+2026-04-30 06:07:07,128 - HandwritingTrainer - INFO - epoch 39, step 1810: train loss (rank 0 current step): -0.670306 train loss (rank 0 recent avg): -0.518291, lr: 0.001000
+2026-04-30 06:08:46,236 - HandwritingTrainer - INFO - epoch 39, step 1820: train loss (rank 0 current step): -0.632276 train loss (rank 0 recent avg): -0.517380, lr: 0.001000
+2026-04-30 06:10:25,186 - HandwritingTrainer - INFO - epoch 39, step 1830: train loss (rank 0 current step): -0.446566 train loss (rank 0 recent avg): -0.520122, lr: 0.001000
+2026-04-30 06:12:33,302 - HandwritingTrainer - INFO - epoch 39 completed in 516.09s: train loss (global avg): -0.511068, val loss (global avg): -0.499984
+2026-04-30 06:13:03,462 - HandwritingTrainer - INFO - epoch 40, step 1840: train loss (rank 0 current step): -0.461659 train loss (rank 0 recent avg): -0.513012, lr: 0.001000
+2026-04-30 06:14:41,286 - HandwritingTrainer - INFO - epoch 40, step 1850: train loss (rank 0 current step): -0.421829 train loss (rank 0 recent avg): -0.505538, lr: 0.001000
+2026-04-30 06:16:19,762 - HandwritingTrainer - INFO - epoch 40, step 1860: train loss (rank 0 current step): -0.583779 train loss (rank 0 recent avg): -0.505772, lr: 0.001000
+2026-04-30 06:17:58,512 - HandwritingTrainer - INFO - epoch 40, step 1870: train loss (rank 0 current step): -0.346551 train loss (rank 0 recent avg): -0.500555, lr: 0.001000
+2026-04-30 06:19:37,202 - HandwritingTrainer - INFO - epoch 40, step 1880: train loss (rank 0 current step): -0.416211 train loss (rank 0 recent avg): -0.484653, lr: 0.001000
+2026-04-30 06:21:06,402 - HandwritingTrainer - INFO - epoch 40 completed in 513.10s: train loss (global avg): -0.457689, val loss (global avg): -0.471624
+2026-04-30 06:22:16,478 - HandwritingTrainer - INFO - epoch 41, step 1890: train loss (rank 0 current step): -0.435801 train loss (rank 0 recent avg): -0.478053, lr: 0.001000
+2026-04-30 06:23:55,052 - HandwritingTrainer - INFO - epoch 41, step 1900: train loss (rank 0 current step): -0.491868 train loss (rank 0 recent avg): -0.471192, lr: 0.001000
+2026-04-30 06:25:33,636 - HandwritingTrainer - INFO - epoch 41, step 1910: train loss (rank 0 current step): -0.352275 train loss (rank 0 recent avg): -0.463152, lr: 0.001000
+2026-04-30 06:27:12,202 - HandwritingTrainer - INFO - epoch 41, step 1920: train loss (rank 0 current step): -0.435396 train loss (rank 0 recent avg): -0.460997, lr: 0.001000
+2026-04-30 06:28:50,878 - HandwritingTrainer - INFO - epoch 41, step 1930: train loss (rank 0 current step): -0.403359 train loss (rank 0 recent avg): -0.462565, lr: 0.001000
+2026-04-30 06:29:40,228 - HandwritingTrainer - INFO - epoch 41 completed in 513.83s: train loss (global avg): -0.469513, val loss (global avg): -0.594238
+2026-04-30 06:31:29,678 - HandwritingTrainer - INFO - epoch 42, step 1940: train loss (rank 0 current step): -0.508916 train loss (rank 0 recent avg): -0.468127, lr: 0.001000
+2026-04-30 06:33:09,102 - HandwritingTrainer - INFO - epoch 42, step 1950: train loss (rank 0 current step): -0.490714 train loss (rank 0 recent avg): -0.476360, lr: 0.001000
+2026-04-30 06:34:48,062 - HandwritingTrainer - INFO - epoch 42, step 1960: train loss (rank 0 current step): -0.640315 train loss (rank 0 recent avg): -0.486727, lr: 0.001000
+2026-04-30 06:36:26,262 - HandwritingTrainer - INFO - epoch 42, step 1970: train loss (rank 0 current step): -0.614541 train loss (rank 0 recent avg): -0.498515, lr: 0.001000
+2026-04-30 06:38:14,552 - HandwritingTrainer - INFO - epoch 42 completed in 514.32s: train loss (global avg): -0.564275, val loss (global avg): -0.681317
+2026-04-30 06:38:14,636 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-1978
+2026-04-30 06:39:04,686 - HandwritingTrainer - INFO - epoch 43, step 1980: train loss (rank 0 current step): -0.635589 train loss (rank 0 recent avg): -0.518131, lr: 0.001000
+2026-04-30 06:40:43,712 - HandwritingTrainer - INFO - epoch 43, step 1990: train loss (rank 0 current step): -0.435363 train loss (rank 0 recent avg): -0.528496, lr: 0.001000
+2026-04-30 06:42:22,912 - HandwritingTrainer - INFO - epoch 43, step 2000: train loss (rank 0 current step): -0.588724 train loss (rank 0 recent avg): -0.544593, lr: 0.001000
+2026-04-30 06:44:02,536 - HandwritingTrainer - INFO - epoch 43, step 2010: train loss (rank 0 current step): -0.582537 train loss (rank 0 recent avg): -0.560075, lr: 0.001000
+2026-04-30 06:45:41,252 - HandwritingTrainer - INFO - epoch 43, step 2020: train loss (rank 0 current step): -0.531034 train loss (rank 0 recent avg): -0.567768, lr: 0.001000
+2026-04-30 06:46:50,702 - HandwritingTrainer - INFO - epoch 43 completed in 516.07s: train loss (global avg): -0.576876, val loss (global avg): -0.574459
+2026-04-30 06:48:20,186 - HandwritingTrainer - INFO - epoch 44, step 2030: train loss (rank 0 current step): -0.391931 train loss (rank 0 recent avg): -0.565334, lr: 0.001000
+2026-04-30 06:49:58,686 - HandwritingTrainer - INFO - epoch 44, step 2040: train loss (rank 0 current step): -0.449147 train loss (rank 0 recent avg): -0.560102, lr: 0.001000
+2026-04-30 06:51:37,262 - HandwritingTrainer - INFO - epoch 44, step 2050: train loss (rank 0 current step): -0.345185 train loss (rank 0 recent avg): -0.549438, lr: 0.001000
+2026-04-30 06:53:15,936 - HandwritingTrainer - INFO - epoch 44, step 2060: train loss (rank 0 current step): -0.523398 train loss (rank 0 recent avg): -0.535645, lr: 0.001000
+2026-04-30 06:55:24,812 - HandwritingTrainer - INFO - epoch 44 completed in 514.11s: train loss (global avg): -0.467742, val loss (global avg): -0.394182
+2026-04-30 06:55:54,978 - HandwritingTrainer - INFO - epoch 45, step 2070: train loss (rank 0 current step): -0.296520 train loss (rank 0 recent avg): -0.525742, lr: 0.001000
+2026-04-30 06:57:34,277 - HandwritingTrainer - INFO - epoch 45, step 2080: train loss (rank 0 current step): -0.318445 train loss (rank 0 recent avg): -0.501140, lr: 0.001000
+2026-04-30 06:59:13,462 - HandwritingTrainer - INFO - epoch 45, step 2090: train loss (rank 0 current step): -0.414879 train loss (rank 0 recent avg): -0.485436, lr: 0.001000
+2026-04-30 07:00:52,336 - HandwritingTrainer - INFO - epoch 45, step 2100: train loss (rank 0 current step): -0.455978 train loss (rank 0 recent avg): -0.471908, lr: 0.001000
+2026-04-30 07:02:31,562 - HandwritingTrainer - INFO - epoch 45, step 2110: train loss (rank 0 current step): -0.411279 train loss (rank 0 recent avg): -0.458724, lr: 0.001000
+2026-04-30 07:04:00,662 - HandwritingTrainer - INFO - epoch 45 completed in 515.85s: train loss (global avg): -0.417891, val loss (global avg): -0.563296
+2026-04-30 07:05:10,386 - HandwritingTrainer - INFO - epoch 46, step 2120: train loss (rank 0 current step): -0.494256 train loss (rank 0 recent avg): -0.447453, lr: 0.001000
+2026-04-30 07:06:49,052 - HandwritingTrainer - INFO - epoch 46, step 2130: train loss (rank 0 current step): -0.429554 train loss (rank 0 recent avg): -0.446439, lr: 0.001000
+2026-04-30 07:08:27,428 - HandwritingTrainer - INFO - epoch 46, step 2140: train loss (rank 0 current step): -0.533382 train loss (rank 0 recent avg): -0.449446, lr: 0.001000
+2026-04-30 07:10:06,562 - HandwritingTrainer - INFO - epoch 46, step 2150: train loss (rank 0 current step): -0.733967 train loss (rank 0 recent avg): -0.463275, lr: 0.001000
+2026-04-30 07:11:46,052 - HandwritingTrainer - INFO - epoch 46, step 2160: train loss (rank 0 current step): -0.447227 train loss (rank 0 recent avg): -0.470482, lr: 0.001000
+2026-04-30 07:12:35,952 - HandwritingTrainer - INFO - epoch 46 completed in 515.29s: train loss (global avg): -0.521238, val loss (global avg): -0.560180
+2026-04-30 07:14:25,462 - HandwritingTrainer - INFO - epoch 47, step 2170: train loss (rank 0 current step): -0.553651 train loss (rank 0 recent avg): -0.480596, lr: 0.001000
+2026-04-30 07:16:04,186 - HandwritingTrainer - INFO - epoch 47, step 2180: train loss (rank 0 current step): -0.363714 train loss (rank 0 recent avg): -0.490434, lr: 0.001000
+2026-04-30 07:17:42,852 - HandwritingTrainer - INFO - epoch 47, step 2190: train loss (rank 0 current step): -0.456224 train loss (rank 0 recent avg): -0.501373, lr: 0.001000
+2026-04-30 07:19:21,162 - HandwritingTrainer - INFO - epoch 47, step 2200: train loss (rank 0 current step): -0.566134 train loss (rank 0 recent avg): -0.504305, lr: 0.001000
+2026-04-30 07:21:08,928 - HandwritingTrainer - INFO - epoch 47 completed in 512.98s: train loss (global avg): -0.512455, val loss (global avg): -0.652540
+2026-04-30 07:21:58,805 - HandwritingTrainer - INFO - epoch 48, step 2210: train loss (rank 0 current step): -0.510228 train loss (rank 0 recent avg): -0.513090, lr: 0.001000
+2026-04-30 07:23:36,962 - HandwritingTrainer - INFO - epoch 48, step 2220: train loss (rank 0 current step): -0.470187 train loss (rank 0 recent avg): -0.522725, lr: 0.001000
+2026-04-30 07:25:14,886 - HandwritingTrainer - INFO - epoch 48, step 2230: train loss (rank 0 current step): -0.599270 train loss (rank 0 recent avg): -0.530871, lr: 0.001000
+2026-04-30 07:26:52,702 - HandwritingTrainer - INFO - epoch 48, step 2240: train loss (rank 0 current step): -0.490506 train loss (rank 0 recent avg): -0.536354, lr: 0.001000
+2026-04-30 07:28:30,862 - HandwritingTrainer - INFO - epoch 48, step 2250: train loss (rank 0 current step): -0.554610 train loss (rank 0 recent avg): -0.537127, lr: 0.001000
+2026-04-30 07:29:39,886 - HandwritingTrainer - INFO - epoch 48 completed in 510.96s: train loss (global avg): -0.565455, val loss (global avg): -0.559315
+2026-04-30 07:31:09,486 - HandwritingTrainer - INFO - epoch 49, step 2260: train loss (rank 0 current step): -0.653022 train loss (rank 0 recent avg): -0.543543, lr: 0.001000
+2026-04-30 07:32:48,312 - HandwritingTrainer - INFO - epoch 49, step 2270: train loss (rank 0 current step): -0.709266 train loss (rank 0 recent avg): -0.547344, lr: 0.001000
+2026-04-30 07:34:26,936 - HandwritingTrainer - INFO - epoch 49, step 2280: train loss (rank 0 current step): -0.567300 train loss (rank 0 recent avg): -0.561798, lr: 0.001000
+2026-04-30 07:36:05,002 - HandwritingTrainer - INFO - epoch 49, step 2290: train loss (rank 0 current step): -0.608017 train loss (rank 0 recent avg): -0.570023, lr: 0.001000
+2026-04-30 07:38:13,552 - HandwritingTrainer - INFO - epoch 49 completed in 513.67s: train loss (global avg): -0.588237, val loss (global avg): -0.665529
+2026-04-30 07:38:43,878 - HandwritingTrainer - INFO - epoch 50, step 2300: train loss (rank 0 current step): -0.683507 train loss (rank 0 recent avg): -0.576050, lr: 0.001000
+2026-04-30 07:40:22,262 - HandwritingTrainer - INFO - epoch 50, step 2310: train loss (rank 0 current step): -0.580477 train loss (rank 0 recent avg): -0.577353, lr: 0.001000
+2026-04-30 07:42:01,078 - HandwritingTrainer - INFO - epoch 50, step 2320: train loss (rank 0 current step): -0.620195 train loss (rank 0 recent avg): -0.579512, lr: 0.001000
+2026-04-30 07:43:39,552 - HandwritingTrainer - INFO - epoch 50, step 2330: train loss (rank 0 current step): -0.582138 train loss (rank 0 recent avg): -0.584380, lr: 0.001000
+2026-04-30 07:45:18,502 - HandwritingTrainer - INFO - epoch 50, step 2340: train loss (rank 0 current step): -0.621686 train loss (rank 0 recent avg): -0.588290, lr: 0.001000
+2026-04-30 07:46:47,552 - HandwritingTrainer - INFO - epoch 50 completed in 514.00s: train loss (global avg): -0.592261, val loss (global avg): -0.665697
+2026-04-30 07:47:57,578 - HandwritingTrainer - INFO - epoch 51, step 2350: train loss (rank 0 current step): -0.574810 train loss (rank 0 recent avg): -0.591256, lr: 0.001000
+2026-04-30 07:49:36,662 - HandwritingTrainer - INFO - epoch 51, step 2360: train loss (rank 0 current step): -0.600494 train loss (rank 0 recent avg): -0.585540, lr: 0.001000
+2026-04-30 07:51:15,062 - HandwritingTrainer - INFO - epoch 51, step 2370: train loss (rank 0 current step): -0.565022 train loss (rank 0 recent avg): -0.578685, lr: 0.001000
+2026-04-30 07:52:53,228 - HandwritingTrainer - INFO - epoch 51, step 2380: train loss (rank 0 current step): -0.673190 train loss (rank 0 recent avg): -0.575921, lr: 0.001000
+2026-04-30 07:54:31,412 - HandwritingTrainer - INFO - epoch 51, step 2390: train loss (rank 0 current step): -0.696881 train loss (rank 0 recent avg): -0.580413, lr: 0.001000
+2026-04-30 07:55:21,012 - HandwritingTrainer - INFO - epoch 51 completed in 513.45s: train loss (global avg): -0.580847, val loss (global avg): -0.651807
+2026-04-30 07:57:10,286 - HandwritingTrainer - INFO - epoch 52, step 2400: train loss (rank 0 current step): -0.578342 train loss (rank 0 recent avg): -0.584425, lr: 0.001000
+2026-04-30 07:58:48,686 - HandwritingTrainer - INFO - epoch 52, step 2410: train loss (rank 0 current step): -0.588088 train loss (rank 0 recent avg): -0.586144, lr: 0.001000
+2026-04-30 08:00:27,027 - HandwritingTrainer - INFO - epoch 52, step 2420: train loss (rank 0 current step): -0.738722 train loss (rank 0 recent avg): -0.586446, lr: 0.001000
+2026-04-30 08:02:05,678 - HandwritingTrainer - INFO - epoch 52, step 2430: train loss (rank 0 current step): -0.543374 train loss (rank 0 recent avg): -0.574456, lr: 0.001000
+2026-04-30 08:03:54,236 - HandwritingTrainer - INFO - epoch 52 completed in 513.22s: train loss (global avg): -0.553629, val loss (global avg): -0.505265
+2026-04-30 08:04:44,102 - HandwritingTrainer - INFO - epoch 53, step 2440: train loss (rank 0 current step): -0.547621 train loss (rank 0 recent avg): -0.566913, lr: 0.001000
+2026-04-30 08:06:22,886 - HandwritingTrainer - INFO - epoch 53, step 2450: train loss (rank 0 current step): -0.486703 train loss (rank 0 recent avg): -0.553908, lr: 0.001000
+2026-04-30 08:08:01,762 - HandwritingTrainer - INFO - epoch 53, step 2460: train loss (rank 0 current step): -0.552412 train loss (rank 0 recent avg): -0.552898, lr: 0.001000
+2026-04-30 08:09:39,903 - HandwritingTrainer - INFO - epoch 53, step 2470: train loss (rank 0 current step): -0.554096 train loss (rank 0 recent avg): -0.548894, lr: 0.001000
+2026-04-30 08:11:18,702 - HandwritingTrainer - INFO - epoch 53, step 2480: train loss (rank 0 current step): -0.631060 train loss (rank 0 recent avg): -0.547908, lr: 0.001000
+2026-04-30 08:12:27,636 - HandwritingTrainer - INFO - epoch 53 completed in 513.40s: train loss (global avg): -0.517717, val loss (global avg): -0.667306
+2026-04-30 08:13:56,886 - HandwritingTrainer - INFO - epoch 54, step 2490: train loss (rank 0 current step): -0.574393 train loss (rank 0 recent avg): -0.540778, lr: 0.001000
+2026-04-30 08:15:35,252 - HandwritingTrainer - INFO - epoch 54, step 2500: train loss (rank 0 current step): -0.592143 train loss (rank 0 recent avg): -0.539390, lr: 0.001000
+2026-04-30 08:17:13,578 - HandwritingTrainer - INFO - epoch 54, step 2510: train loss (rank 0 current step): -0.502938 train loss (rank 0 recent avg): -0.537555, lr: 0.001000
+2026-04-30 08:18:52,986 - HandwritingTrainer - INFO - epoch 54, step 2520: train loss (rank 0 current step): -0.577373 train loss (rank 0 recent avg): -0.535633, lr: 0.001000
+2026-04-30 08:21:01,677 - HandwritingTrainer - INFO - epoch 54 completed in 514.04s: train loss (global avg): -0.575741, val loss (global avg): -0.618929
+2026-04-30 08:21:31,928 - HandwritingTrainer - INFO - epoch 55, step 2530: train loss (rank 0 current step): -0.562412 train loss (rank 0 recent avg): -0.546214, lr: 0.001000
+2026-04-30 08:23:11,236 - HandwritingTrainer - INFO - epoch 55, step 2540: train loss (rank 0 current step): -0.586370 train loss (rank 0 recent avg): -0.551782, lr: 0.001000
+2026-04-30 08:24:50,512 - HandwritingTrainer - INFO - epoch 55, step 2550: train loss (rank 0 current step): -0.519105 train loss (rank 0 recent avg): -0.558135, lr: 0.001000
+2026-04-30 08:26:29,777 - HandwritingTrainer - INFO - epoch 55, step 2560: train loss (rank 0 current step): -0.491196 train loss (rank 0 recent avg): -0.562732, lr: 0.001000
+2026-04-30 08:28:08,702 - HandwritingTrainer - INFO - epoch 55, step 2570: train loss (rank 0 current step): -0.606481 train loss (rank 0 recent avg): -0.570221, lr: 0.001000
+2026-04-30 08:29:37,436 - HandwritingTrainer - INFO - epoch 55 completed in 515.75s: train loss (global avg): -0.574448, val loss (global avg): -0.635718
+2026-04-30 08:30:46,862 - HandwritingTrainer - INFO - epoch 56, step 2580: train loss (rank 0 current step): -0.512399 train loss (rank 0 recent avg): -0.571646, lr: 0.001000
+2026-04-30 08:32:24,486 - HandwritingTrainer - INFO - epoch 56, step 2590: train loss (rank 0 current step): -0.542380 train loss (rank 0 recent avg): -0.570707, lr: 0.001000
+2026-04-30 08:34:02,862 - HandwritingTrainer - INFO - epoch 56, step 2600: train loss (rank 0 current step): -0.528782 train loss (rank 0 recent avg): -0.564232, lr: 0.001000
+2026-04-30 08:35:41,178 - HandwritingTrainer - INFO - epoch 56, step 2610: train loss (rank 0 current step): -0.550424 train loss (rank 0 recent avg): -0.558880, lr: 0.001000
+2026-04-30 08:37:19,536 - HandwritingTrainer - INFO - epoch 56, step 2620: train loss (rank 0 current step): -0.720410 train loss (rank 0 recent avg): -0.560491, lr: 0.001000
+2026-04-30 08:38:08,862 - HandwritingTrainer - INFO - epoch 56 completed in 511.43s: train loss (global avg): -0.540016, val loss (global avg): -0.640382
+2026-04-30 08:39:57,586 - HandwritingTrainer - INFO - epoch 57, step 2630: train loss (rank 0 current step): -0.588354 train loss (rank 0 recent avg): -0.554342, lr: 0.001000
+2026-04-30 08:41:36,086 - HandwritingTrainer - INFO - epoch 57, step 2640: train loss (rank 0 current step): -0.581623 train loss (rank 0 recent avg): -0.557013, lr: 0.001000
+2026-04-30 08:43:14,536 - HandwritingTrainer - INFO - epoch 57, step 2650: train loss (rank 0 current step): -0.727968 train loss (rank 0 recent avg): -0.560022, lr: 0.001000
+2026-04-30 08:44:53,162 - HandwritingTrainer - INFO - epoch 57, step 2660: train loss (rank 0 current step): -0.609388 train loss (rank 0 recent avg): -0.566614, lr: 0.001000
+2026-04-30 08:46:42,012 - HandwritingTrainer - INFO - epoch 57 completed in 513.15s: train loss (global avg): -0.587380, val loss (global avg): -0.643537
+2026-04-30 08:47:31,602 - HandwritingTrainer - INFO - epoch 58, step 2670: train loss (rank 0 current step): -0.489129 train loss (rank 0 recent avg): -0.567274, lr: 0.001000
+2026-04-30 08:49:10,612 - HandwritingTrainer - INFO - epoch 58, step 2680: train loss (rank 0 current step): -0.540456 train loss (rank 0 recent avg): -0.565937, lr: 0.001000
+2026-04-30 08:50:49,986 - HandwritingTrainer - INFO - epoch 58, step 2690: train loss (rank 0 current step): -0.702543 train loss (rank 0 recent avg): -0.574764, lr: 0.001000
+2026-04-30 08:52:29,036 - HandwritingTrainer - INFO - epoch 58, step 2700: train loss (rank 0 current step): -0.908369 train loss (rank 0 recent avg): -0.588949, lr: 0.001000
+2026-04-30 08:54:08,012 - HandwritingTrainer - INFO - epoch 58, step 2710: train loss (rank 0 current step): -0.702838 train loss (rank 0 recent avg): -0.602710, lr: 0.001000
+2026-04-30 08:55:17,512 - HandwritingTrainer - INFO - epoch 58 completed in 515.50s: train loss (global avg): -0.625933, val loss (global avg): -0.703236
+2026-04-30 08:55:17,602 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-2714
+2026-04-30 08:56:47,102 - HandwritingTrainer - INFO - epoch 59, step 2720: train loss (rank 0 current step): -0.554802 train loss (rank 0 recent avg): -0.608277, lr: 0.001000
+2026-04-30 08:58:25,362 - HandwritingTrainer - INFO - epoch 59, step 2730: train loss (rank 0 current step): -0.607945 train loss (rank 0 recent avg): -0.619956, lr: 0.001000
+2026-04-30 09:00:04,436 - HandwritingTrainer - INFO - epoch 59, step 2740: train loss (rank 0 current step): -0.698166 train loss (rank 0 recent avg): -0.622210, lr: 0.001000
+2026-04-30 09:01:43,828 - HandwritingTrainer - INFO - epoch 59, step 2750: train loss (rank 0 current step): -0.690361 train loss (rank 0 recent avg): -0.629616, lr: 0.001000
+2026-04-30 09:03:52,502 - HandwritingTrainer - INFO - epoch 59 completed in 514.90s: train loss (global avg): -0.637628, val loss (global avg): -0.650500
+2026-04-30 09:04:22,762 - HandwritingTrainer - INFO - epoch 60, step 2760: train loss (rank 0 current step): -0.493183 train loss (rank 0 recent avg): -0.628413, lr: 0.001000
+2026-04-30 09:06:01,786 - HandwritingTrainer - INFO - epoch 60, step 2770: train loss (rank 0 current step): -0.726662 train loss (rank 0 recent avg): -0.628630, lr: 0.001000
+2026-04-30 09:07:40,486 - HandwritingTrainer - INFO - epoch 60, step 2780: train loss (rank 0 current step): -0.763272 train loss (rank 0 recent avg): -0.637694, lr: 0.001000
+2026-04-30 09:09:19,812 - HandwritingTrainer - INFO - epoch 60, step 2790: train loss (rank 0 current step): -0.716392 train loss (rank 0 recent avg): -0.644746, lr: 0.001000
+2026-04-30 09:10:59,136 - HandwritingTrainer - INFO - epoch 60, step 2800: train loss (rank 0 current step): -0.709965 train loss (rank 0 recent avg): -0.642877, lr: 0.001000
+2026-04-30 09:12:28,562 - HandwritingTrainer - INFO - epoch 60 completed in 516.06s: train loss (global avg): -0.649077, val loss (global avg): -0.689424
+2026-04-30 09:13:38,162 - HandwritingTrainer - INFO - epoch 61, step 2810: train loss (rank 0 current step): -0.721061 train loss (rank 0 recent avg): -0.644006, lr: 0.001000
+2026-04-30 09:15:17,478 - HandwritingTrainer - INFO - epoch 61, step 2820: train loss (rank 0 current step): -0.668780 train loss (rank 0 recent avg): -0.644428, lr: 0.001000
+2026-04-30 09:16:56,212 - HandwritingTrainer - INFO - epoch 61, step 2830: train loss (rank 0 current step): -0.773083 train loss (rank 0 recent avg): -0.638566, lr: 0.001000
+2026-04-30 09:18:34,936 - HandwritingTrainer - INFO - epoch 61, step 2840: train loss (rank 0 current step): -0.558133 train loss (rank 0 recent avg): -0.640429, lr: 0.001000
+2026-04-30 09:20:13,212 - HandwritingTrainer - INFO - epoch 61, step 2850: train loss (rank 0 current step): -0.643602 train loss (rank 0 recent avg): -0.642170, lr: 0.001000
+2026-04-30 09:21:02,928 - HandwritingTrainer - INFO - epoch 61 completed in 514.37s: train loss (global avg): -0.631335, val loss (global avg): -0.709255
+2026-04-30 09:21:03,012 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-2852
+2026-04-30 09:22:52,586 - HandwritingTrainer - INFO - epoch 62, step 2860: train loss (rank 0 current step): -0.587179 train loss (rank 0 recent avg): -0.639156, lr: 0.001000
+2026-04-30 09:24:31,002 - HandwritingTrainer - INFO - epoch 62, step 2870: train loss (rank 0 current step): -0.717308 train loss (rank 0 recent avg): -0.643643, lr: 0.001000
+2026-04-30 09:26:10,962 - HandwritingTrainer - INFO - epoch 62, step 2880: train loss (rank 0 current step): -0.619932 train loss (rank 0 recent avg): -0.640157, lr: 0.001000
+2026-04-30 09:27:49,828 - HandwritingTrainer - INFO - epoch 62, step 2890: train loss (rank 0 current step): -0.658715 train loss (rank 0 recent avg): -0.628905, lr: 0.001000
+2026-04-30 09:29:38,912 - HandwritingTrainer - INFO - epoch 62 completed in 515.90s: train loss (global avg): -0.607474, val loss (global avg): -0.595562
+2026-04-30 09:30:29,062 - HandwritingTrainer - INFO - epoch 63, step 2900: train loss (rank 0 current step): -0.603057 train loss (rank 0 recent avg): -0.621021, lr: 0.001000
+2026-04-30 09:32:07,986 - HandwritingTrainer - INFO - epoch 63, step 2910: train loss (rank 0 current step): -0.684040 train loss (rank 0 recent avg): -0.615907, lr: 0.001000
+2026-04-30 09:33:46,512 - HandwritingTrainer - INFO - epoch 63, step 2920: train loss (rank 0 current step): -0.535204 train loss (rank 0 recent avg): -0.613361, lr: 0.001000
+2026-04-30 09:35:24,986 - HandwritingTrainer - INFO - epoch 63, step 2930: train loss (rank 0 current step): -0.607975 train loss (rank 0 recent avg): -0.617535, lr: 0.001000
+2026-04-30 09:37:03,778 - HandwritingTrainer - INFO - epoch 63, step 2940: train loss (rank 0 current step): -0.623498 train loss (rank 0 recent avg): -0.622629, lr: 0.001000
+2026-04-30 09:38:12,736 - HandwritingTrainer - INFO - epoch 63 completed in 513.82s: train loss (global avg): -0.630782, val loss (global avg): -0.726310
+2026-04-30 09:38:12,828 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-2944
+2026-04-30 09:39:43,212 - HandwritingTrainer - INFO - epoch 64, step 2950: train loss (rank 0 current step): -0.551463 train loss (rank 0 recent avg): -0.618639, lr: 0.001000
+2026-04-30 09:41:22,462 - HandwritingTrainer - INFO - epoch 64, step 2960: train loss (rank 0 current step): -0.605738 train loss (rank 0 recent avg): -0.624150, lr: 0.001000
+2026-04-30 09:43:01,912 - HandwritingTrainer - INFO - epoch 64, step 2970: train loss (rank 0 current step): -0.707194 train loss (rank 0 recent avg): -0.622410, lr: 0.001000
+2026-04-30 09:44:41,827 - HandwritingTrainer - INFO - epoch 64, step 2980: train loss (rank 0 current step): -0.588640 train loss (rank 0 recent avg): -0.625249, lr: 0.001000
+2026-04-30 09:46:51,412 - HandwritingTrainer - INFO - epoch 64 completed in 518.58s: train loss (global avg): -0.648488, val loss (global avg): -0.657818
+2026-04-30 09:47:21,902 - HandwritingTrainer - INFO - epoch 65, step 2990: train loss (rank 0 current step): -0.604966 train loss (rank 0 recent avg): -0.632182, lr: 0.001000
+2026-04-30 09:49:01,062 - HandwritingTrainer - INFO - epoch 65, step 3000: train loss (rank 0 current step): -0.579690 train loss (rank 0 recent avg): -0.638031, lr: 0.001000
+2026-04-30 09:50:40,412 - HandwritingTrainer - INFO - epoch 65, step 3010: train loss (rank 0 current step): -0.735353 train loss (rank 0 recent avg): -0.643600, lr: 0.001000
+2026-04-30 09:52:19,662 - HandwritingTrainer - INFO - epoch 65, step 3020: train loss (rank 0 current step): -0.745387 train loss (rank 0 recent avg): -0.649123, lr: 0.001000
+2026-04-30 09:53:59,377 - HandwritingTrainer - INFO - epoch 65, step 3030: train loss (rank 0 current step): -0.665976 train loss (rank 0 recent avg): -0.657713, lr: 0.001000
+2026-04-30 09:55:29,186 - HandwritingTrainer - INFO - epoch 65 completed in 517.77s: train loss (global avg): -0.666435, val loss (global avg): -0.684497
+2026-04-30 09:56:38,953 - HandwritingTrainer - INFO - epoch 66, step 3040: train loss (rank 0 current step): -0.627809 train loss (rank 0 recent avg): -0.654266, lr: 0.001000
+2026-04-30 09:58:18,112 - HandwritingTrainer - INFO - epoch 66, step 3050: train loss (rank 0 current step): -0.724867 train loss (rank 0 recent avg): -0.653946, lr: 0.001000
+2026-04-30 09:59:57,036 - HandwritingTrainer - INFO - epoch 66, step 3060: train loss (rank 0 current step): -0.726128 train loss (rank 0 recent avg): -0.658253, lr: 0.001000
+2026-04-30 10:01:36,262 - HandwritingTrainer - INFO - epoch 66, step 3070: train loss (rank 0 current step): -0.585815 train loss (rank 0 recent avg): -0.662456, lr: 0.001000
+2026-04-30 10:03:15,612 - HandwritingTrainer - INFO - epoch 66, step 3080: train loss (rank 0 current step): -0.766216 train loss (rank 0 recent avg): -0.665360, lr: 0.001000
+2026-04-30 10:04:05,486 - HandwritingTrainer - INFO - epoch 66 completed in 516.30s: train loss (global avg): -0.661142, val loss (global avg): -0.711015
+2026-04-30 10:05:55,386 - HandwritingTrainer - INFO - epoch 67, step 3090: train loss (rank 0 current step): -0.690546 train loss (rank 0 recent avg): -0.659727, lr: 0.001000
+2026-04-30 10:07:34,428 - HandwritingTrainer - INFO - epoch 67, step 3100: train loss (rank 0 current step): -0.745895 train loss (rank 0 recent avg): -0.656775, lr: 0.001000
+2026-04-30 10:09:13,812 - HandwritingTrainer - INFO - epoch 67, step 3110: train loss (rank 0 current step): -0.631178 train loss (rank 0 recent avg): -0.652709, lr: 0.001000
+2026-04-30 10:10:53,336 - HandwritingTrainer - INFO - epoch 67, step 3120: train loss (rank 0 current step): -0.549079 train loss (rank 0 recent avg): -0.652895, lr: 0.001000
+2026-04-30 10:12:43,012 - HandwritingTrainer - INFO - epoch 67 completed in 517.53s: train loss (global avg): -0.619134, val loss (global avg): -0.611577
+2026-04-30 10:13:33,512 - HandwritingTrainer - INFO - epoch 68, step 3130: train loss (rank 0 current step): -0.440656 train loss (rank 0 recent avg): -0.637501, lr: 0.001000
+2026-04-30 10:15:12,952 - HandwritingTrainer - INFO - epoch 68, step 3140: train loss (rank 0 current step): -0.456789 train loss (rank 0 recent avg): -0.621609, lr: 0.001000
+2026-04-30 10:16:52,028 - HandwritingTrainer - INFO - epoch 68, step 3150: train loss (rank 0 current step): -0.585662 train loss (rank 0 recent avg): -0.614268, lr: 0.001000
+2026-04-30 10:18:32,352 - HandwritingTrainer - INFO - epoch 68, step 3160: train loss (rank 0 current step): -0.575421 train loss (rank 0 recent avg): -0.604441, lr: 0.001000
+2026-04-30 10:20:12,552 - HandwritingTrainer - INFO - epoch 68, step 3170: train loss (rank 0 current step): -0.509694 train loss (rank 0 recent avg): -0.589573, lr: 0.001000
+2026-04-30 10:21:22,236 - HandwritingTrainer - INFO - epoch 68 completed in 519.22s: train loss (global avg): -0.535612, val loss (global avg): -0.635284
+2026-04-30 10:22:52,412 - HandwritingTrainer - INFO - epoch 69, step 3180: train loss (rank 0 current step): -0.699096 train loss (rank 0 recent avg): -0.579293, lr: 0.001000
+2026-04-30 10:24:31,952 - HandwritingTrainer - INFO - epoch 69, step 3190: train loss (rank 0 current step): -0.632969 train loss (rank 0 recent avg): -0.580451, lr: 0.001000
+2026-04-30 10:26:11,552 - HandwritingTrainer - INFO - epoch 69, step 3200: train loss (rank 0 current step): -0.714690 train loss (rank 0 recent avg): -0.585530, lr: 0.001000
+2026-04-30 10:27:50,086 - HandwritingTrainer - INFO - epoch 69, step 3210: train loss (rank 0 current step): -0.671684 train loss (rank 0 recent avg): -0.591732, lr: 0.001000
+2026-04-30 10:29:58,402 - HandwritingTrainer - INFO - epoch 69 completed in 516.17s: train loss (global avg): -0.641263, val loss (global avg): -0.727564
+2026-04-30 10:29:58,486 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3220
+2026-04-30 10:30:29,012 - HandwritingTrainer - INFO - epoch 70, step 3220: train loss (rank 0 current step): -0.615704 train loss (rank 0 recent avg): -0.589944, lr: 0.001000
+2026-04-30 10:32:07,712 - HandwritingTrainer - INFO - epoch 70, step 3230: train loss (rank 0 current step): -0.690336 train loss (rank 0 recent avg): -0.597191, lr: 0.001000
+2026-04-30 10:33:47,252 - HandwritingTrainer - INFO - epoch 70, step 3240: train loss (rank 0 current step): -0.732027 train loss (rank 0 recent avg): -0.611828, lr: 0.001000
+2026-04-30 10:35:27,128 - HandwritingTrainer - INFO - epoch 70, step 3250: train loss (rank 0 current step): -0.734560 train loss (rank 0 recent avg): -0.626458, lr: 0.001000
+2026-04-30 10:37:06,086 - HandwritingTrainer - INFO - epoch 70, step 3260: train loss (rank 0 current step): -0.824166 train loss (rank 0 recent avg): -0.637590, lr: 0.001000
+2026-04-30 10:38:35,336 - HandwritingTrainer - INFO - epoch 70 completed in 516.85s: train loss (global avg): -0.681703, val loss (global avg): -0.746470
+2026-04-30 10:38:35,412 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3266
+2026-04-30 10:39:45,786 - HandwritingTrainer - INFO - epoch 71, step 3270: train loss (rank 0 current step): -0.632528 train loss (rank 0 recent avg): -0.657812, lr: 0.001000
+2026-04-30 10:41:24,103 - HandwritingTrainer - INFO - epoch 71, step 3280: train loss (rank 0 current step): -0.849346 train loss (rank 0 recent avg): -0.672382, lr: 0.001000
+2026-04-30 10:43:02,878 - HandwritingTrainer - INFO - epoch 71, step 3290: train loss (rank 0 current step): -0.850550 train loss (rank 0 recent avg): -0.682480, lr: 0.001000
+2026-04-30 10:44:41,936 - HandwritingTrainer - INFO - epoch 71, step 3300: train loss (rank 0 current step): -0.607586 train loss (rank 0 recent avg): -0.683085, lr: 0.001000
+2026-04-30 10:46:21,036 - HandwritingTrainer - INFO - epoch 71, step 3310: train loss (rank 0 current step): -0.626166 train loss (rank 0 recent avg): -0.672509, lr: 0.001000
+2026-04-30 10:47:11,162 - HandwritingTrainer - INFO - epoch 71 completed in 515.75s: train loss (global avg): -0.668896, val loss (global avg): -0.635454
+2026-04-30 10:49:00,612 - HandwritingTrainer - INFO - epoch 72, step 3320: train loss (rank 0 current step): -0.564550 train loss (rank 0 recent avg): -0.668507, lr: 0.001000
+2026-04-30 10:50:39,512 - HandwritingTrainer - INFO - epoch 72, step 3330: train loss (rank 0 current step): -0.623016 train loss (rank 0 recent avg): -0.670911, lr: 0.001000
+2026-04-30 10:52:19,118 - HandwritingTrainer - INFO - epoch 72, step 3340: train loss (rank 0 current step): -0.755802 train loss (rank 0 recent avg): -0.674570, lr: 0.001000
+2026-04-30 10:53:58,112 - HandwritingTrainer - INFO - epoch 72, step 3350: train loss (rank 0 current step): -0.649049 train loss (rank 0 recent avg): -0.674723, lr: 0.001000
+2026-04-30 10:55:47,586 - HandwritingTrainer - INFO - epoch 72 completed in 516.42s: train loss (global avg): -0.655067, val loss (global avg): -0.584803
+2026-04-30 10:56:37,962 - HandwritingTrainer - INFO - epoch 73, step 3360: train loss (rank 0 current step): -0.448866 train loss (rank 0 recent avg): -0.662769, lr: 0.001000
+2026-04-30 10:58:17,302 - HandwritingTrainer - INFO - epoch 73, step 3370: train loss (rank 0 current step): -0.682674 train loss (rank 0 recent avg): -0.648421, lr: 0.001000
+2026-04-30 10:59:56,136 - HandwritingTrainer - INFO - epoch 73, step 3380: train loss (rank 0 current step): -0.548794 train loss (rank 0 recent avg): -0.638477, lr: 0.001000
+2026-04-30 11:01:34,612 - HandwritingTrainer - INFO - epoch 73, step 3390: train loss (rank 0 current step): -0.727667 train loss (rank 0 recent avg): -0.636454, lr: 0.001000
+2026-04-30 11:03:12,386 - HandwritingTrainer - INFO - epoch 73, step 3400: train loss (rank 0 current step): -0.632443 train loss (rank 0 recent avg): -0.645698, lr: 0.001000
+2026-04-30 11:04:21,262 - HandwritingTrainer - INFO - epoch 73 completed in 513.68s: train loss (global avg): -0.649910, val loss (global avg): -0.754887
+2026-04-30 11:04:21,352 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3404
+2026-04-30 11:05:51,078 - HandwritingTrainer - INFO - epoch 74, step 3410: train loss (rank 0 current step): -0.754099 train loss (rank 0 recent avg): -0.656004, lr: 0.001000
+2026-04-30 11:07:29,852 - HandwritingTrainer - INFO - epoch 74, step 3420: train loss (rank 0 current step): -0.673335 train loss (rank 0 recent avg): -0.666021, lr: 0.001000
+2026-04-30 11:09:08,052 - HandwritingTrainer - INFO - epoch 74, step 3430: train loss (rank 0 current step): -0.732473 train loss (rank 0 recent avg): -0.671276, lr: 0.001000
+2026-04-30 11:10:46,736 - HandwritingTrainer - INFO - epoch 74, step 3440: train loss (rank 0 current step): -0.584938 train loss (rank 0 recent avg): -0.672063, lr: 0.001000
+2026-04-30 11:12:54,877 - HandwritingTrainer - INFO - epoch 74 completed in 513.53s: train loss (global avg): -0.699582, val loss (global avg): -0.758865
+2026-04-30 11:12:54,962 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3450
+2026-04-30 11:13:25,377 - HandwritingTrainer - INFO - epoch 75, step 3450: train loss (rank 0 current step): -0.739967 train loss (rank 0 recent avg): -0.671743, lr: 0.001000
+2026-04-30 11:15:03,512 - HandwritingTrainer - INFO - epoch 75, step 3460: train loss (rank 0 current step): -0.833463 train loss (rank 0 recent avg): -0.684681, lr: 0.001000
+2026-04-30 11:16:42,036 - HandwritingTrainer - INFO - epoch 75, step 3470: train loss (rank 0 current step): -0.772373 train loss (rank 0 recent avg): -0.705891, lr: 0.001000
+2026-04-30 11:18:20,402 - HandwritingTrainer - INFO - epoch 75, step 3480: train loss (rank 0 current step): -0.847882 train loss (rank 0 recent avg): -0.722364, lr: 0.001000
+2026-04-30 11:19:58,786 - HandwritingTrainer - INFO - epoch 75, step 3490: train loss (rank 0 current step): -0.839572 train loss (rank 0 recent avg): -0.731316, lr: 0.001000
+2026-04-30 11:21:28,262 - HandwritingTrainer - INFO - epoch 75 completed in 513.30s: train loss (global avg): -0.767458, val loss (global avg): -0.894814
+2026-04-30 11:21:28,362 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3496
+2026-04-30 11:22:38,502 - HandwritingTrainer - INFO - epoch 76, step 3500: train loss (rank 0 current step): -0.668799 train loss (rank 0 recent avg): -0.733000, lr: 0.001000
+2026-04-30 11:24:17,386 - HandwritingTrainer - INFO - epoch 76, step 3510: train loss (rank 0 current step): -0.532623 train loss (rank 0 recent avg): -0.735735, lr: 0.001000
+2026-04-30 11:25:56,323 - HandwritingTrainer - INFO - epoch 76, step 3520: train loss (rank 0 current step): -0.631226 train loss (rank 0 recent avg): -0.727281, lr: 0.001000
+2026-04-30 11:27:35,178 - HandwritingTrainer - INFO - epoch 76, step 3530: train loss (rank 0 current step): -0.686710 train loss (rank 0 recent avg): -0.724114, lr: 0.001000
+2026-04-30 11:29:14,452 - HandwritingTrainer - INFO - epoch 76, step 3540: train loss (rank 0 current step): -0.619535 train loss (rank 0 recent avg): -0.724014, lr: 0.001000
+2026-04-30 11:30:03,678 - HandwritingTrainer - INFO - epoch 76 completed in 515.32s: train loss (global avg): -0.686494, val loss (global avg): -0.769661
+2026-04-30 11:31:53,402 - HandwritingTrainer - INFO - epoch 77, step 3550: train loss (rank 0 current step): -0.715925 train loss (rank 0 recent avg): -0.727590, lr: 0.001000
+2026-04-30 11:33:32,762 - HandwritingTrainer - INFO - epoch 77, step 3560: train loss (rank 0 current step): -0.665827 train loss (rank 0 recent avg): -0.729012, lr: 0.001000
+2026-04-30 11:35:11,804 - HandwritingTrainer - INFO - epoch 77, step 3570: train loss (rank 0 current step): -0.816278 train loss (rank 0 recent avg): -0.725714, lr: 0.001000
+2026-04-30 11:36:51,036 - HandwritingTrainer - INFO - epoch 77, step 3580: train loss (rank 0 current step): -0.766805 train loss (rank 0 recent avg): -0.727503, lr: 0.001000
+2026-04-30 11:38:39,636 - HandwritingTrainer - INFO - epoch 77 completed in 515.96s: train loss (global avg): -0.760488, val loss (global avg): -0.898706
+2026-04-30 11:38:39,728 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3588
+2026-04-30 11:39:29,936 - HandwritingTrainer - INFO - epoch 78, step 3590: train loss (rank 0 current step): -0.670434 train loss (rank 0 recent avg): -0.724851, lr: 0.001000
+2026-04-30 11:41:09,086 - HandwritingTrainer - INFO - epoch 78, step 3600: train loss (rank 0 current step): -0.939403 train loss (rank 0 recent avg): -0.731107, lr: 0.001000
+2026-04-30 11:42:48,418 - HandwritingTrainer - INFO - epoch 78, step 3610: train loss (rank 0 current step): -0.644516 train loss (rank 0 recent avg): -0.732957, lr: 0.001000
+2026-04-30 11:44:27,202 - HandwritingTrainer - INFO - epoch 78, step 3620: train loss (rank 0 current step): -0.807314 train loss (rank 0 recent avg): -0.752424, lr: 0.001000
+2026-04-30 11:46:06,528 - HandwritingTrainer - INFO - epoch 78, step 3630: train loss (rank 0 current step): -0.815461 train loss (rank 0 recent avg): -0.766147, lr: 0.001000
+2026-04-30 11:47:15,836 - HandwritingTrainer - INFO - epoch 78 completed in 516.11s: train loss (global avg): -0.800276, val loss (global avg): -0.898764
+2026-04-30 11:47:15,936 - HandwritingTrainer - INFO - Saved checkpoint locally to C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\outputs\arabic_v1\checkpoints\model-3634
+2026-04-30 11:48:46,212 - HandwritingTrainer - INFO - epoch 79, step 3640: train loss (rank 0 current step): -0.803316 train loss (rank 0 recent avg): -0.777958, lr: 0.001000
+2026-04-30 11:50:26,987 - HandwritingTrainer - INFO - epoch 79, step 3650: train loss (rank 0 current step): -0.815410 train loss (rank 0 recent avg): -0.782205, lr: 0.001000
+2026-04-30 11:52:07,612 - HandwritingTrainer - INFO - epoch 79, step 3660: train loss (rank 0 current step): -0.803400 train loss (rank 0 recent avg): -0.791363, lr: 0.001000
+2026-04-30 11:53:46,952 - HandwritingTrainer - INFO - epoch 79, step 3670: train loss (rank 0 current step): -0.922619 train loss (rank 0 recent avg): -0.800575, lr: 0.001000
+2026-04-30 11:55:55,612 - HandwritingTrainer - INFO - epoch 79 completed in 519.68s: train loss (global avg): -0.810271, val loss (global avg): -0.839737
+2026-04-30 11:56:26,052 - HandwritingTrainer - INFO - epoch 80, step 3680: train loss (rank 0 current step): -0.756551 train loss (rank 0 recent avg): -0.802437, lr: 0.001000
+2026-04-30 11:58:05,386 - HandwritingTrainer - INFO - epoch 80, step 3690: train loss (rank 0 current step): -0.735000 train loss (rank 0 recent avg): -0.803002, lr: 0.001000
+2026-04-30 11:59:44,405 - HandwritingTrainer - INFO - epoch 80, step 3700: train loss (rank 0 current step): -0.817986 train loss (rank 0 recent avg): -0.807926, lr: 0.001000
+2026-04-30 12:01:23,412 - HandwritingTrainer - INFO - epoch 80, step 3710: train loss (rank 0 current step): -0.796930 train loss (rank 0 recent avg): -0.813591, lr: 0.001000
+2026-04-30 12:03:02,536 - HandwritingTrainer - INFO - epoch 80, step 3720: train loss (rank 0 current step): -0.759981 train loss (rank 0 recent avg): -0.810026, lr: 0.001000
+2026-04-30 12:04:31,762 - HandwritingTrainer - INFO - epoch 80 completed in 516.15s: train loss (global avg): -0.784764, val loss (global avg): -0.809343
+2026-04-30 12:05:41,762 - HandwritingTrainer - INFO - epoch 81, step 3730: train loss (rank 0 current step): -0.677369 train loss (rank 0 recent avg): -0.796464, lr: 0.001000
+2026-04-30 12:07:20,402 - HandwritingTrainer - INFO - epoch 81, step 3740: train loss (rank 0 current step): -0.661523 train loss (rank 0 recent avg): -0.771405, lr: 0.001000
+2026-04-30 12:08:59,612 - HandwritingTrainer - INFO - epoch 81, step 3750: train loss (rank 0 current step): -0.653268 train loss (rank 0 recent avg): -0.755545, lr: 0.001000
+2026-04-30 12:10:38,686 - HandwritingTrainer - INFO - epoch 81, step 3760: train loss (rank 0 current step): -0.617581 train loss (rank 0 recent avg): -0.728546, lr: 0.001000
+2026-04-30 12:12:17,178 - HandwritingTrainer - INFO - epoch 81, step 3770: train loss (rank 0 current step): -0.553906 train loss (rank 0 recent avg): -0.710671, lr: 0.001000
+2026-04-30 12:13:06,752 - HandwritingTrainer - INFO - epoch 81 completed in 514.99s: train loss (global avg): -0.600271, val loss (global avg): -0.604565
+2026-04-30 12:14:55,862 - HandwritingTrainer - INFO - epoch 82, step 3780: train loss (rank 0 current step): -0.864421 train loss (rank 0 recent avg): -0.688213, lr: 0.001000
+2026-04-30 12:16:34,978 - HandwritingTrainer - INFO - epoch 82, step 3790: train loss (rank 0 current step): -0.874907 train loss (rank 0 recent avg): -0.689953, lr: 0.001000
+2026-04-30 12:18:13,962 - HandwritingTrainer - INFO - epoch 82, step 3800: train loss (rank 0 current step): -0.819589 train loss (rank 0 recent avg): -0.679245, lr: 0.001000
+2026-04-30 12:19:52,962 - HandwritingTrainer - INFO - epoch 82, step 3810: train loss (rank 0 current step): -0.646199 train loss (rank 0 recent avg): -0.675231, lr: 0.001000
+2026-04-30 12:21:41,686 - HandwritingTrainer - INFO - epoch 82 completed in 514.93s: train loss (global avg): -0.734626, val loss (global avg): -0.698933
+2026-04-30 12:22:31,783 - HandwritingTrainer - INFO - epoch 83, step 3820: train loss (rank 0 current step): -0.704543 train loss (rank 0 recent avg): -0.668443, lr: 0.001000
+2026-04-30 12:24:10,562 - HandwritingTrainer - INFO - epoch 83, step 3830: train loss (rank 0 current step): -0.788986 train loss (rank 0 recent avg): -0.664621, lr: 0.001000
+2026-04-30 12:25:49,636 - HandwritingTrainer - INFO - epoch 83, step 3840: train loss (rank 0 current step): -0.781950 train loss (rank 0 recent avg): -0.672693, lr: 0.001000
+2026-04-30 12:27:28,852 - HandwritingTrainer - INFO - epoch 83, step 3850: train loss (rank 0 current step): -0.771882 train loss (rank 0 recent avg): -0.683552, lr: 0.001000
+2026-04-30 12:29:08,754 - HandwritingTrainer - INFO - epoch 83, step 3860: train loss (rank 0 current step): -0.672182 train loss (rank 0 recent avg): -0.699887, lr: 0.001000
+2026-04-30 12:30:18,278 - HandwritingTrainer - INFO - epoch 83 completed in 516.59s: train loss (global avg): -0.684717, val loss (global avg): -0.774089
+2026-04-30 12:31:48,486 - HandwritingTrainer - INFO - epoch 84, step 3870: train loss (rank 0 current step): -0.557101 train loss (rank 0 recent avg): -0.699886, lr: 0.001000
+2026-04-30 12:33:27,802 - HandwritingTrainer - INFO - epoch 84, step 3880: train loss (rank 0 current step): -0.797467 train loss (rank 0 recent avg): -0.711667, lr: 0.001000
+2026-04-30 12:35:06,912 - HandwritingTrainer - INFO - epoch 84, step 3890: train loss (rank 0 current step): -0.821016 train loss (rank 0 recent avg): -0.706780, lr: 0.001000
+2026-04-30 12:36:46,202 - HandwritingTrainer - INFO - epoch 84, step 3900: train loss (rank 0 current step): -0.817597 train loss (rank 0 recent avg): -0.705693, lr: 0.001000
+2026-04-30 12:38:55,512 - HandwritingTrainer - INFO - epoch 84 completed in 517.23s: train loss (global avg): -0.718514, val loss (global avg): -0.704471
+2026-04-30 12:39:25,836 - HandwritingTrainer - INFO - epoch 85, step 3910: train loss (rank 0 current step): -0.584434 train loss (rank 0 recent avg): -0.701491, lr: 0.001000
+2026-04-30 12:41:05,086 - HandwritingTrainer - INFO - epoch 85, step 3920: train loss (rank 0 current step): -0.611508 train loss (rank 0 recent avg): -0.689692, lr: 0.001000
