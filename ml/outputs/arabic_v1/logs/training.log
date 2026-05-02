@@ -511,3 +511,10 @@
 2026-04-30 12:38:55,512 - HandwritingTrainer - INFO - epoch 84 completed in 517.23s: train loss (global avg): -0.718514, val loss (global avg): -0.704471
 2026-04-30 12:39:25,836 - HandwritingTrainer - INFO - epoch 85, step 3910: train loss (rank 0 current step): -0.584434 train loss (rank 0 recent avg): -0.701491, lr: 0.001000
 2026-04-30 12:41:05,086 - HandwritingTrainer - INFO - epoch 85, step 3920: train loss (rank 0 current step): -0.611508 train loss (rank 0 recent avg): -0.689692, lr: 0.001000
+2026-04-30 18:53:43,118 - HandwritingTrainer - INFO - Updated training parameters: batch_size=64, learning_rate=0.001, beta1=0.9
+2026-04-30 18:53:43,166 - HandwritingTrainer - INFO - warm_start_step is None, attempting to load the latest checkpoint
+2026-04-30 18:56:15,141 - HandwritingTrainer - INFO - Updated training parameters: batch_size=64, learning_rate=0.001, beta1=0.9
+2026-04-30 18:56:15,161 - HandwritingTrainer - INFO - warm_start_step is None, attempting to load the latest checkpoint
+2026-04-30 18:56:16,979 - HandwritingTrainer - INFO - Updated training parameters: batch_size=64, learning_rate=0.001, beta1=0.9
+2026-04-30 18:56:16,980 - HandwritingTrainer - INFO - Loaded checkpoint from D:\guc\another trial\trial\ml\outputs\arabic_v1\checkpoints\model-3634
+2026-04-30 18:56:16,981 - HandwritingTrainer - INFO - Starting training for 2142 epochs (45 steps per epoch)

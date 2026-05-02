@@ -40,7 +40,7 @@ def package_model(checkpoint_path: Path,
     )
 
     # load the checkpoint 
-    checkpoint_data = torch.load(checkpoint_path, map_location=device)
+    checkpoint_data = torch.load(checkpoint_path, map_location=device, weights_only=False)
     state_dict = checkpoint_data['model_state_dict']
     new_state_dict = {} 
     is_ddp_model = any(k.startswith('module.') for k in state_dict.keys())

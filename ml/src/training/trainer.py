@@ -59,11 +59,14 @@ class HandwritingTrainer:
         )  
         self.logger = logging.getLogger('HandwritingTrainer')  
           
-        # Move model to device  
-        self.model.to(device)  
-          
-        # Initialize training phase  
-        self.restart_idx = 0  
+        # Move model to device
+        self.model.to(device)
+
+        # Mixed precision scaler (fp16 on CUDA, disabled on CPU)
+        self.scaler = torch.cuda.amp.GradScaler(enabled=self.device.type == 'cuda')
+
+        # Initialize training phase
+        self.restart_idx = 0
         self.update_train_params()  
           
     def update_train_params(self):  
@@ -147,22 +150,18 @@ class HandwritingTrainer:
         c = batch['chars'].to(self.device)  
         c_len = batch['chars_len'].to(self.device)  
           
-        # forward pass  
-        pis, sigmas, rhos, mus, es, _ = self.model(x, c, c_len)  
-          
-        # calculate loss  
-        sequence_loss, element_loss = gaussian_mixture_loss(y, x_len, pis, sigmas, rhos, mus, es)  
-        loss = element_loss  
-          
-        # backward pass  
-        self.optimizer.zero_grad()  
-        loss.backward()  
-          
-        # gradient clipping  
-        torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.grad_clip)  
-          
-        # update weights  
-        self.optimizer.step()  
+        self.optimizer.zero_grad()
+
+        with torch.cuda.amp.autocast(enabled=self.device.type == 'cuda'):
+            pis, sigmas, rhos, mus, es, _ = self.model(x, c, c_len)
+            sequence_loss, element_loss = gaussian_mixture_loss(y, x_len, pis, sigmas, rhos, mus, es)
+            loss = element_loss
+
+        self.scaler.scale(loss).backward()
+        self.scaler.unscale_(self.optimizer)
+        torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.grad_clip)
+        self.scaler.step(self.optimizer)
+        self.scaler.update()  
           
         return loss.item(), sequence_loss.detach().cpu().numpy()  
       
@@ -250,7 +249,7 @@ class HandwritingTrainer:
             self.logger.error(f"Checkpoint {checkpoint_path} not found")  
             return 0  
           
-        checkpoint = torch.load(checkpoint_path, map_location=self.device)  
+        checkpoint = torch.load(checkpoint_path, map_location=self.device, weights_only=False)
         self.model.load_state_dict(checkpoint['model_state_dict'])  
         self.restart_idx = checkpoint['restart_idx']  
         self.update_train_params()  

@@ -100,8 +100,13 @@ def find_latest_checkpoint(checkpoints_dir: Union[str, Path]) -> Path:
     if not checkpoint_files:
         raise FileNotFoundError(f"No checkpoint file is found inside the directory: ${checkpoints_path}") 
 
-    checkpoint_files.sort(key=lambda x: x.stat().st_mtime, reverse=True) 
-    return checkpoint_files[0] 
+    def _step_num(p: Path) -> int:
+        try:
+            return int(p.name.split('-')[1])
+        except (IndexError, ValueError):
+            return -1
+    checkpoint_files.sort(key=_step_num, reverse=True)
+    return checkpoint_files[0]
 
 def find_latest_run_checkpoint(base_outputs_dir: Union[str,Path] = "outputs") -> Path:
     """Find the latest checkpoint from the latest run."""

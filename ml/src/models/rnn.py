@@ -58,7 +58,7 @@ class HandwritingRNN(nn.Module):
         checkpoint_path = Path(checkpoint_path) 
         if  not checkpoint_path.exists(): 
             raise FileNotFoundError(f"Checkpoint not found at {checkpoint_path}")
-        checkpoint = torch.load(checkpoint_path, map_location=device) 
+        checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
 
         model_params = config.model_params 
         dataset_params = config.dataset 
@@ -192,15 +192,19 @@ class HandwritingRNN(nn.Module):
           
         return pis_out, sigmas_out, rhos_out, mus_out, es_out, hidden_state
     
-    @torch.jit.export  
+    @torch.jit.export
     def sample(self, char_seq: torch.Tensor, char_seq_lengths: torch.Tensor,
                max_length: int = 1000, bias: float = 0.5,
-               prime: Optional[PrimingData] = None) -> list[torch.Tensor]:  
-        batch_size = char_seq.size(0)  
-        device = char_seq.device  
-        
-        pen_up_ctr = 0 
+               prime: Optional[PrimingData] = None,
+               min_length: int = 200) -> list[torch.Tensor]:
+        batch_size = char_seq.size(0)
+        device = char_seq.device
+
+        pen_up_ctr = 0
         done_ctr = 0
+        # track pen-down events so dotted letters have time to complete
+        pen_down_count = torch.zeros(batch_size, dtype=torch.long, device=device)
+        prev_pen_up = torch.ones(batch_size, dtype=torch.bool, device=device)
         
         # embed character sequence  
         char_one_hot = self.one_hot_encode(char_seq) 
@@ -284,54 +288,64 @@ class HandwritingRNN(nn.Module):
         last_actual_char_idx = char_seq_lengths - 1
         attention_has_reached_end = torch.zeros(batch_size, dtype=torch.bool, device=device)
         finished_mask = torch.zeros(batch_size, dtype=torch.bool, device=device)
-        output_lengths = torch.full((batch_size,),-1, dtype=torch.long, device=device)
+        output_lengths = torch.full((batch_size,), -1, dtype=torch.long, device=device)
 
-        for t in range(max_length):  
-            # LSTM 1  
-            lstm1_input = torch.cat([window, x], dim=1)  
-            h1, c1 = self.lstm1(lstm1_input, (h1, c1))  
-              
-            # Attention  
-            window, kappa, phi = self.attention(  
-                h1, window, kappa, x, char_one_hot, char_seq_lengths  
-            )  
-              
-            # LSTM 2  
-            lstm2_input = torch.cat([x, h1, window], dim=1)  
-            h2, c2 = self.lstm2(lstm2_input, (h2, c2))  
-              
-            # LSTM 3  
-            lstm3_input = torch.cat([x, h1, h2, window], dim=1)  
-            h3, c3 = self.lstm3(lstm3_input, (h3, c3))  
-              
-            # GMM output  
+        for t in range(max_length):
+            # LSTM 1
+            lstm1_input = torch.cat([window, x], dim=1)
+            h1, c1 = self.lstm1(lstm1_input, (h1, c1))
+
+            # Attention
+            window, kappa, phi = self.attention(
+                h1, window, kappa, x, char_one_hot, char_seq_lengths
+            )
+
+            # LSTM 2
+            lstm2_input = torch.cat([x, h1, window], dim=1)
+            h2, c2 = self.lstm2(lstm2_input, (h2, c2))
+
+            # LSTM 3
+            lstm3_input = torch.cat([x, h1, h2, window], dim=1)
+            h3, c3 = self.lstm3(lstm3_input, (h3, c3))
+
+            # GMM output
             gmm_input = torch.cat([h1, h2, h3], dim=1)
-            pis, sigmas, rhos, mus, es = self.gmm(gmm_input, bias_tensor)  
-              
-            # sample from GMM  
-            stroke = self.gmm.sample(pis, sigmas, rhos, mus, es)  
-            strokes.append(stroke)  
-              
-            # update input for next step  
-            x = stroke  
-            attention_peak_indices = torch.argmax(phi, dim=1) 
-            is_attention_on_end = (attention_peak_indices == last_actual_char_idx) 
-            attention_has_reached_end = attention_has_reached_end | is_attention_on_end 
+            pis, sigmas, rhos, mus, es = self.gmm(gmm_input, bias_tensor)
+
+            # sample from GMM
+            stroke = self.gmm.sample(pis, sigmas, rhos, mus, es)
+            strokes.append(stroke)
+
+            # update input for next step
+            x = stroke
+            attention_peak_indices = torch.argmax(phi, dim=1)
+            is_attention_on_end = (attention_peak_indices == last_actual_char_idx)
+            attention_has_reached_end = attention_has_reached_end | is_attention_on_end
             pen_is_up = stroke[:,2] >= 0.5
-             
-            newly_finished = attention_has_reached_end & pen_is_up 
-            first_time_finished = newly_finished & (output_lengths == -1) 
+
+            # count pen-down events (transitions from up to down)
+            pen_just_went_down = prev_pen_up & ~pen_is_up
+            pen_down_count = pen_down_count + pen_just_went_down.long()
+            prev_pen_up = pen_is_up
+
+            # allow stopping after min_length steps and at least 1 pen-down event
+            # min_length gives the model enough time to draw dots naturally if it will
+            can_stop = pen_down_count >= 1
+            if t < min_length:
+                can_stop = torch.zeros(batch_size, dtype=torch.bool, device=device)
+            newly_finished = can_stop & attention_has_reached_end & pen_is_up
+            first_time_finished = newly_finished & (output_lengths == -1)
             output_lengths[first_time_finished] = t + 1
 
-            finished_mask = finished_mask | newly_finished 
+            finished_mask = finished_mask | newly_finished
 
             if finished_mask.all():
                 break
 
-        all_strokes = torch.stack(strokes, dim=1) 
-        # for any samples that never finished, their length is the max generated len 
-        max_generated_len = all_strokes.size(1) 
-        output_lengths[output_lengths == -1] = max_generated_len 
+        all_strokes = torch.stack(strokes, dim=1)
+        # for any samples that never finished, their length is the max generated len
+        max_generated_len = all_strokes.size(1)
+        output_lengths[output_lengths == -1] = max_generated_len
 
         output_list = [all_strokes[i,:output_lengths[i]] for i in range(batch_size)]
         return output_list 

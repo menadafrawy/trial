@@ -98,7 +98,7 @@ def main():
         if args.checkpoint is None:
             checkpoint_path = find_latest_checkpoint(checkpoints_subdir ) 
         else:
-            checkpoint = checkpoints_subdir / f"model-{args.checkpoint}" 
+            checkpoint_path = checkpoints_subdir / f"model-{args.checkpoint}"
         
         if checkpoint_path is None or (not checkpoint_path.exists()):
             raise FileNotFoundError(f"Checkpoint is not found at {checkpoint_path}")
