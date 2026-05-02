@@ -268,8 +268,7 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
         const [x, y, penState = 0] = stroke;
 
         const normalizedX = (typeof x === "number" ? x : 0) * scale + offsetX;
-        const normalizedY =
-          canvasHeight - ((typeof y === "number" ? y : 0) * scale + offsetY);
+        const normalizedY = (typeof y === "number" ? y : 0) * scale + offsetY;
 
         return [normalizedX, normalizedY, penState];
       });

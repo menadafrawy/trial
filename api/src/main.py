@@ -8,7 +8,7 @@ from pathlib import Path
 import logging 
 import time 
 from contextlib import asynccontextmanager
-from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map
+from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__) 
@@ -36,7 +36,7 @@ MIN_MOVEMENT_THRESHOLD = 0.02
 class HandwritingRequest(BaseModel):
     text: str = Field(..., min_length=1, max_length=40, description="Text to generate handwriting for")
     max_length: int = Field(default=1000, ge=50, le=1200, description="Maximum number of stroke points")
-    bias: float = Field(default=2, ge=0.2, le=10.0, description="Sampling bias for generation")
+    bias: float = Field(default=2, ge=0.2, le=3.0, description="Sampling bias for generation")
 class HandwritingResponse(BaseModel):
     success: bool = True
     input_text: str
@@ -77,7 +77,7 @@ async def lifespan(app: FastAPI):
             logger.info(f"Traced model loaded successfully from {scripted_model_path}")
 
         # Load the metadata
-        model_metadata = torch.load(metadata_model_path, map_location='cpu')
+        model_metadata = torch.load(metadata_model_path, map_location='cpu', weights_only=False)
         if model_metadata:
             logger.info(f"Model metadata loaded successfully from {metadata_model_path}")
             logger.info(f"Model metadata keys: {list(model_metadata.keys())}")
@@ -153,23 +153,41 @@ async def health_check():
         model_metadata_keys=list(model_metadata.keys()) if model_metadata else None,
     )
 
-def text_to_tensor(text: str, device: torch.device) -> tuple[torch.Tensor, torch.Tensor]:
+NUM_SAMPLES = 10  # generate N candidates per request, return the best one
+
+def text_to_tensor(text: str, device: torch.device, batch_size: int = 1) -> tuple[torch.Tensor, torch.Tensor]:
     """Convert text to tensor format expected by the model"""
-    global alphabet_map, max_text_len  
+    global alphabet_map, max_text_len
     if alphabet_map is None:
         raise ValueError("Alphabet map not initialized during api startup")
     if max_text_len is None:
         raise ValueError("`max_text_len` is not initialized during api startup")
     padded_encoded_np, true_length = encode_text(
-        text=text, 
-        char_to_index_map=alphabet_map, 
-        max_length=max_text_len 
+        text=text,
+        char_to_index_map=alphabet_map,
+        max_length=max_text_len
     )
-
-    char_seq = torch.from_numpy(padded_encoded_np).to(device=device, dtype=torch.long)
-    char_len = torch.tensor([true_length], device=device, dtype=torch.long)
-
+    # Repeat for batch
+    import numpy as np
+    padded_batch = np.repeat(padded_encoded_np, batch_size, axis=0)
+    char_seq = torch.from_numpy(padded_batch).to(device=device, dtype=torch.long)
+    char_len = torch.tensor([true_length] * batch_size, device=device, dtype=torch.long)
     return char_seq, char_len
+
+
+def _count_pen_segments(strokes: list[list[float]]) -> int:
+    """Count the number of pen-down segments (higher = richer output)."""
+    count = 0
+    in_seg = False
+    for s in strokes:
+        if s[2] < 0.5:
+            if not in_seg:
+                count += 1
+                in_seg = True
+        else:
+            in_seg = False
+    return count
+
 
 def generate_strokes(
     char_seq: torch.Tensor,
@@ -178,36 +196,42 @@ def generate_strokes(
     api_bias: float,
     current_device: torch.device
 ) -> list[list[float]]:
-    """Generate strokes using the model's built-in sample method"""
+    """Generate strokes using batch sampling, returning the richest candidate."""
     global scripted_model
     if scripted_model is None:
         raise ValueError("Scripted model not initialized.")
-    
+
     with torch.no_grad():
         try:
             stroke_tensors = scripted_model.sample(
-                char_seq, 
-                char_lengths, 
-                max_length=max_gen_len, 
+                char_seq,
+                char_lengths,
+                max_length=max_gen_len,
                 bias=api_bias
             )
-            
-            if len(stroke_tensors) == 1 and stroke_tensors[0].dim() == 2:
-                all_strokes_tensor = stroke_tensors[0]
-                stroke_offsets = all_strokes_tensor.cpu().numpy().tolist()
-            else:
-                stroke_offsets = []
-                for stroke_tensor in stroke_tensors:
-                    if stroke_tensor.dim() == 2:
-                        stroke_data = stroke_tensor.squeeze(0).cpu().numpy().tolist()
-                    else:
-                        stroke_data = stroke_tensor.cpu().numpy().tolist()
-                    
-                    if len(stroke_data) == 3:
-                        stroke_offsets.append(stroke_data)
-            
-            return stroke_offsets
-            
+
+            # Each element of stroke_tensors is one sample: shape (T_i, 3)
+            candidates: list[list[list[float]]] = []
+            for tensor in stroke_tensors:
+                if tensor.dim() == 2 and tensor.shape[-1] == 3:
+                    candidates.append(tensor.cpu().numpy().tolist())
+
+            if not candidates:
+                return []
+
+            # Convert to absolute coords and trim noise for each candidate, then pick the richest
+            best_trimmed: list[list[float]] = []
+            best_score = -1
+            for cand in candidates:
+                abs_coords = convert_offsets_to_absolute_coords(cand)
+                trimmed = trim_stroke_noise(abs_coords)
+                score = _count_pen_segments(trimmed)
+                if score > best_score:
+                    best_score = score
+                    best_trimmed = trimmed
+
+            return best_trimmed
+
         except Exception as e:
             logger.error(f"Error in model sampling: {e}", exc_info=True)
             return []
@@ -225,7 +249,7 @@ async def generate_handwriting_endpoint(request: HandwritingRequest):
     start_time = time.time()
     
     try:
-        char_seq_tensor, char_lengths_tensor = text_to_tensor(request.text, device)
+        char_seq_tensor, char_lengths_tensor = text_to_tensor(request.text, device, batch_size=NUM_SAMPLES)
 
         relative_stroke_offsets = generate_strokes(
             char_seq_tensor, char_lengths_tensor, request.max_length, request.bias, device
@@ -241,13 +265,14 @@ async def generate_handwriting_endpoint(request: HandwritingRequest):
                 message="No strokes generated."
             )
 
-        absolute_stroke_coords = convert_offsets_to_absolute_coords(relative_stroke_offsets)
+        # generate_strokes already returns the best candidate (absolute coords, noise-trimmed)
+        final_strokes = relative_stroke_offsets
         generation_time_ms = (time.time() - start_time) * 1000
 
         return HandwritingResponse(
             input_text=request.text,
-            strokes=absolute_stroke_coords,
-            num_points=len(absolute_stroke_coords),
+            strokes=final_strokes,
+            num_points=len(final_strokes),
             generation_time_ms=generation_time_ms
         )
     except ValueError as ve:

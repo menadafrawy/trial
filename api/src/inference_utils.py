@@ -34,6 +34,52 @@ def encode_text(text: str, char_to_index_map: Dict[str, int],
     return np.array([padded_encoded]), true_length
 
 
+def trim_stroke_noise(strokes: list[list[float]], min_segment_pts: int = 3, max_consecutive_tiny: int = 2) -> list[list[float]]:
+    """Remove noisy trailing micro-segments that appear after the letter is complete.
+
+    Identifies pen-down segments shorter than min_segment_pts and trims output at
+    the first run of max_consecutive_tiny such segments in a row.
+    """
+    if not strokes:
+        return strokes
+
+    # Build list of pen-down segment sizes and their start indices
+    segments: list[tuple[int, int]] = []  # (start_idx, size)
+    in_seg = False
+    seg_start = 0
+    for i, s in enumerate(strokes):
+        pen_down = s[2] < 0.5
+        if pen_down and not in_seg:
+            seg_start = i
+            in_seg = True
+        elif not pen_down and in_seg:
+            segments.append((seg_start, i - seg_start))
+            in_seg = False
+    if in_seg:
+        segments.append((seg_start, len(strokes) - seg_start))
+
+    if not segments:
+        return strokes
+
+    # Find first run of max_consecutive_tiny tiny segments
+    tiny_run = 0
+    cutoff_start = -1
+    for seg_idx, (start, size) in enumerate(segments):
+        if size < min_segment_pts:
+            tiny_run += 1
+            if tiny_run >= max_consecutive_tiny:
+                # cut before the first tiny segment in this run
+                first_tiny = seg_idx - (max_consecutive_tiny - 1)
+                cutoff_start = segments[first_tiny][0]
+                break
+        else:
+            tiny_run = 0
+
+    if cutoff_start == -1:
+        return strokes
+    return strokes[:cutoff_start]
+
+
 def convert_offsets_to_absolute_coords(stroke_offsets: list[list[float]]) -> list[list[float]]:
     if not stroke_offsets:
         return []
