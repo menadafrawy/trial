@@ -8,7 +8,7 @@ from pathlib import Path
 import logging 
 import time 
 from contextlib import asynccontextmanager
-from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise
+from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise, filter_spatially_distant_strokes, normalise_arabic, is_degenerate_strokes
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__) 
@@ -155,6 +155,26 @@ async def health_check():
 
 NUM_SAMPLES = 10  # generate N candidates per request, return the best one
 
+# Expected pen-down segment count per isolated Arabic letter.
+# Used to pick the best generation candidate (prefer count closest to expected).
+ARABIC_EXPECTED_SEGMENTS: dict[str, int] = {
+    'أ': 1, 'إ': 1, 'آ': 1, 'ا': 1,
+    'ب': 2,
+    'ت': 3, 'ث': 4,
+    'ج': 2, 'ح': 1, 'خ': 2,
+    'د': 1, 'ذ': 2,
+    'ر': 1, 'ز': 2,
+    'س': 1, 'ش': 4,
+    'ص': 1, 'ض': 2,
+    'ط': 1, 'ظ': 2,
+    'ع': 1, 'غ': 2,
+    'ف': 2, 'ق': 3,
+    'ك': 1, 'ل': 1, 'م': 1,
+    'ن': 2, 'ه': 1,
+    'و': 1,
+    'ى': 1, 'ي': 3, 'ة': 2,
+}
+
 def text_to_tensor(text: str, device: torch.device, batch_size: int = 1) -> tuple[torch.Tensor, torch.Tensor]:
     """Convert text to tensor format expected by the model"""
     global alphabet_map, max_text_len
@@ -189,12 +209,26 @@ def _count_pen_segments(strokes: list[list[float]]) -> int:
     return count
 
 
+def _candidate_score(strokes: list[list[float]], target_segs: int | None) -> float:
+    """Score a candidate stroke sequence. Higher = better.
+
+    If target_segs is known: reward closeness to expected count and penalise excess.
+    Otherwise fall back to raw segment count.
+    """
+    actual = _count_pen_segments(strokes)
+    if target_segs is None:
+        return float(actual)
+    # reward each matched segment, penalise each extra one
+    return float(min(actual, target_segs)) - 0.5 * max(0, actual - target_segs)
+
+
 def generate_strokes(
     char_seq: torch.Tensor,
     char_lengths: torch.Tensor,
     max_gen_len: int,
     api_bias: float,
-    current_device: torch.device
+    current_device: torch.device,
+    input_text: str = "",
 ) -> list[list[float]]:
     """Generate strokes using batch sampling, returning the richest candidate."""
     global scripted_model
@@ -219,13 +253,17 @@ def generate_strokes(
             if not candidates:
                 return []
 
-            # Convert to absolute coords and trim noise for each candidate, then pick the richest
+            # Convert to absolute coords, denoise, then pick by expected segment count
+            target_segs = ARABIC_EXPECTED_SEGMENTS.get(input_text.strip()) if input_text else None
             best_trimmed: list[list[float]] = []
-            best_score = -1
+            best_score = float("-inf")
             for cand in candidates:
                 abs_coords = convert_offsets_to_absolute_coords(cand)
                 trimmed = trim_stroke_noise(abs_coords)
-                score = _count_pen_segments(trimmed)
+                trimmed = filter_spatially_distant_strokes(trimmed)
+                if is_degenerate_strokes(trimmed):
+                    continue  # skip bias-collapse straight-line candidates
+                score = _candidate_score(trimmed, target_segs)
                 if score > best_score:
                     best_score = score
                     best_trimmed = trimmed
@@ -249,10 +287,17 @@ async def generate_handwriting_endpoint(request: HandwritingRequest):
     start_time = time.time()
     
     try:
-        char_seq_tensor, char_lengths_tensor = text_to_tensor(request.text, device, batch_size=NUM_SAMPLES)
+        normalised_text = normalise_arabic(request.text)
+        target_segs = ARABIC_EXPECTED_SEGMENTS.get(normalised_text.strip())
+        logger.info(
+            f"GENERATE | raw='{request.text}' (U+{' '.join(f'{ord(c):04X}' for c in request.text)}) "
+            f"-> normalised='{normalised_text}' | expected_segments={target_segs}"
+        )
+        char_seq_tensor, char_lengths_tensor = text_to_tensor(normalised_text, device, batch_size=NUM_SAMPLES)
 
         relative_stroke_offsets = generate_strokes(
-            char_seq_tensor, char_lengths_tensor, request.max_length, request.bias, device
+            char_seq_tensor, char_lengths_tensor, request.max_length, request.bias, device,
+            input_text=normalised_text,
         )
 
         if not relative_stroke_offsets:
@@ -265,9 +310,16 @@ async def generate_handwriting_endpoint(request: HandwritingRequest):
                 message="No strokes generated."
             )
 
-        # generate_strokes already returns the best candidate (absolute coords, noise-trimmed)
         final_strokes = relative_stroke_offsets
         generation_time_ms = (time.time() - start_time) * 1000
+        actual_segs = sum(
+            1 for i, s in enumerate(final_strokes)
+            if s[2] < 0.5 and (i == 0 or final_strokes[i-1][2] >= 0.5)
+        )
+        logger.info(
+            f"RESULT  | pts={len(final_strokes)} segments={actual_segs} "
+            f"expected={target_segs} time={generation_time_ms:.0f}ms"
+        )
 
         return HandwritingResponse(
             input_text=request.text,

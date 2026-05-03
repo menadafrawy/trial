@@ -123,7 +123,7 @@ function App() {
                 label="Style"
                 value={tempBias}
                 min={0.5}
-                max={6}
+                max={3}
                 step={0.1}
                 onChange={setTempBias}
                 getLabel={getStyleLabel}

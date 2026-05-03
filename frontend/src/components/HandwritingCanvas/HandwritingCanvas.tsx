@@ -201,8 +201,8 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
         ) {
           minX = Math.min(minX, x);
           maxX = Math.max(maxX, x);
-          minY = Math.min(minY, y);
-          maxY = Math.max(maxY, y);
+          minY = Math.min(minY, -y);
+          maxY = Math.max(maxY, -y);
           validPoints++;
         }
       });
@@ -268,7 +268,7 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
         const [x, y, penState = 0] = stroke;
 
         const normalizedX = (typeof x === "number" ? x : 0) * scale + offsetX;
-        const normalizedY = (typeof y === "number" ? y : 0) * scale + offsetY;
+        const normalizedY = -(typeof y === "number" ? y : 0) * scale + offsetY;
 
         return [normalizedX, normalizedY, penState];
       });

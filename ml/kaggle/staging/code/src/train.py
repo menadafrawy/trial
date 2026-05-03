@@ -29,7 +29,7 @@ def cleanup():
     if dist.is_initialized():
         dist.destroy_process_group()
 
-def train(rank,local_rank, world_size, run_name: Optional[str] = None):
+def train(rank, local_rank, world_size, run_name: Optional[str] = None, warm_start_step: Optional[int] = None):
     """Training function to run on each GPU"""
     if world_size > 1:
         # setup process group
@@ -129,7 +129,7 @@ def train(rank,local_rank, world_size, run_name: Optional[str] = None):
     # start training
     if rank == 0:
         print("Starting training...")
-    best_step = trainer.fit()
+    best_step = trainer.fit(warm_start_step=warm_start_step)
 
     if rank == 0:
         print(f"Training completed. Best model at step {best_step}")
@@ -142,7 +142,9 @@ def train(rank,local_rank, world_size, run_name: Optional[str] = None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--run_name", type=str, default=None,help="A unique name for training run name")
+    parser.add_argument("--run_name", type=str, default=None, help="A unique name for training run name")
+    parser.add_argument("--warm_start_step", type=int, default=None,
+                        help="Step to resume from. Pass 0 to train from scratch (ignores any existing checkpoints).")
     args, _ = parser.parse_known_args()
 
     if not torch.cuda.is_available():
@@ -159,7 +161,7 @@ def main():
             # set the multiprocessing start method
             torch.multiprocessing.set_start_method('spawn', force=True)
             
-            train(rank, local_rank, world_size, args.run_name) 
+            train(rank, local_rank, world_size, args.run_name, args.warm_start_step) 
         except Exception as e:
             print(f"Error in distributed training: {e}")
             import traceback
