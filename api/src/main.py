@@ -8,7 +8,9 @@ from pathlib import Path
 import logging 
 import time 
 from contextlib import asynccontextmanager
-from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise, filter_spatially_distant_strokes, normalise_arabic, is_degenerate_strokes
+from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise, filter_spatially_distant_strokes, normalise_arabic, is_degenerate_strokes, trim_to_n_segments
+from feedback_store import FeedbackStore
+import fine_tuner
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__) 
@@ -17,16 +19,18 @@ MODEL_DIR = Path("../../ml/packaged_models")
 SCRIPTED_MODEL_NAME = "handwriting_model.scripted.pt" 
 METADATA_MODEL_NAME = "handwriting_model.pt" 
 
-scripted_model: Optional[torch.jit.ScriptModule] = None 
-model_metadata: Optional[dict] = None 
-device: Optional[torch.device] = None 
-alphabet_map: Optional[dict[str, int]] = None 
-ALPHABET_LIST: Optional[list[str]] = None 
-ALPHABET_SIZE: Optional[int] = None 
-max_text_len: Optional[int] = None 
+scripted_model: Optional[torch.jit.ScriptModule] = None
+model_metadata: Optional[dict] = None
+device: Optional[torch.device] = None
+alphabet_map: Optional[dict[str, int]] = None
+ALPHABET_LIST: Optional[list[str]] = None
+ALPHABET_SIZE: Optional[int] = None
+max_text_len: Optional[int] = None
 output_mixture_components: Optional[int] = None # To store num_mixtures for GMM sampling
-lstm_size: Optional[int] = None 
-attention_mixture_components: Optional[int] = None 
+lstm_size: Optional[int] = None
+attention_mixture_components: Optional[int] = None
+
+feedback_store: Optional[FeedbackStore] = None 
 
 # Patience for early stopping in generate_strokes
 PATIENCE_PEN_UP_EOS = 15
@@ -51,10 +55,22 @@ class HealthResponse(BaseModel):
     device: str 
     model_metadata_keys: Optional[list[str]] = None 
 
+def _reload_scripted_model():
+    """Reload scripted model from disk into the global (called after fine-tuning)."""
+    global scripted_model
+    try:
+        path = MODEL_DIR / SCRIPTED_MODEL_NAME
+        scripted_model = torch.jit.load(str(path), map_location=device)
+        scripted_model.eval()
+        logger.info("Scripted model reloaded after fine-tune.")
+    except Exception as e:
+        logger.error(f"Failed to reload scripted model: {e}")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Lifespan context manager for startup and shutdown events"""
-    global scripted_model, model_metadata, device, alphabet_map, max_text_len, ALPHABET_LIST, output_mixture_components, lstm_size, attention_mixture_components, ALPHABET_SIZE
+    global scripted_model, model_metadata, device, alphabet_map, max_text_len, ALPHABET_LIST, output_mixture_components, lstm_size, attention_mixture_components, ALPHABET_SIZE, feedback_store
     logger.info("Attempting to load model resources during startup") 
     try:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -104,6 +120,8 @@ async def lifespan(app: FastAPI):
             
             logger.info(f"Alphabet created. Size: {len(ALPHABET_LIST)}")
             logger.info("Model resources are loaded and ready")
+            feedback_store = FeedbackStore()
+            logger.info("Feedback store initialised.")
         else:
             raise ValueError(f"Failed to load content frm metadata file")
 
@@ -130,7 +148,7 @@ app = FastAPI(
 # add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","http://127.0.0.1:5173"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:5174", "http://127.0.0.1:5174"],
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
@@ -158,6 +176,7 @@ NUM_SAMPLES = 10  # generate N candidates per request, return the best one
 # Expected pen-down segment count per isolated Arabic letter.
 # Used to pick the best generation candidate (prefer count closest to expected).
 ARABIC_EXPECTED_SEGMENTS: dict[str, int] = {
+    'ء': 1,
     'أ': 1, 'إ': 1, 'آ': 1, 'ا': 1,
     'ب': 2,
     'ت': 3, 'ث': 4,
@@ -268,12 +287,155 @@ def generate_strokes(
                     best_score = score
                     best_trimmed = trimmed
 
+            # Hard-trim to target segment count to eliminate trailing noise strokes
+            if target_segs is not None and _count_pen_segments(best_trimmed) > target_segs:
+                best_trimmed = trim_to_n_segments(best_trimmed, target_segs)
+
             return best_trimmed
 
         except Exception as e:
             logger.error(f"Error in model sampling: {e}", exc_info=True)
             return []
             
+def generate_all_candidates(
+    char_seq: torch.Tensor,
+    char_lengths: torch.Tensor,
+    max_gen_len: int,
+    api_bias: float,
+    current_device: torch.device,
+    n_candidates: int = 6,
+) -> list[list[list[float]]]:
+    """Return up to n_candidates valid (non-degenerate) stroke sequences."""
+    global scripted_model
+    if scripted_model is None:
+        return []
+    with torch.no_grad():
+        try:
+            stroke_tensors = scripted_model.sample(
+                char_seq, char_lengths, max_length=max_gen_len, bias=api_bias
+            )
+            results = []
+            for tensor in stroke_tensors:
+                if tensor.dim() != 2 or tensor.shape[-1] != 3:
+                    continue
+                cand = tensor.cpu().numpy().tolist()
+                abs_c = convert_offsets_to_absolute_coords(cand)
+                trimmed = trim_stroke_noise(abs_c)
+                trimmed = filter_spatially_distant_strokes(trimmed)
+                if is_degenerate_strokes(trimmed):
+                    continue
+                results.append(trimmed)
+                if len(results) >= n_candidates:
+                    break
+            return results
+        except Exception as e:
+            logger.error(f"Error generating candidates: {e}")
+            return []
+
+
+# ── Feedback Pydantic models ──────────────────────────────────────────────────
+
+class CandidatesRequest(BaseModel):
+    text: str = Field(..., min_length=1, max_length=4)
+    bias: float = Field(default=1.5, ge=0.2, le=3.0)
+    n: int = Field(default=6, ge=1, le=10)
+
+class CandidatesResponse(BaseModel):
+    candidates: list[list[list[float]]]
+    text: str
+
+class SaveFeedbackRequest(BaseModel):
+    text: str = Field(..., min_length=1, max_length=4)
+    strokes: list[list[float]]
+    bias: float = Field(default=1.5)
+    accepted: bool
+
+class SaveFeedbackResponse(BaseModel):
+    id: str
+    total_accepted: int
+
+class FineTuneRequest(BaseModel):
+    n_epochs: int = Field(default=3, ge=1, le=10)
+    lr: float = Field(default=1e-5, ge=1e-7, le=1e-3)
+
+class FineTuneResponse(BaseModel):
+    started: bool
+    message: str
+
+class FeedbackStatsResponse(BaseModel):
+    total_accepted: int
+    per_character: dict[str, int]
+    fine_tune_status: dict
+
+
+# ── Feedback endpoints ────────────────────────────────────────────────────────
+
+@app.post("/feedback/candidates", response_model=CandidatesResponse, tags=["Feedback"])
+async def get_candidates(request: CandidatesRequest):
+    """Generate multiple candidate strokes for human review."""
+    if not all([scripted_model, alphabet_map, max_text_len]):
+        raise HTTPException(status_code=503, detail="Model not loaded.")
+    assert device is not None
+    normalised = normalise_arabic(request.text)
+    # Use a larger batch to get enough non-degenerate candidates
+    batch = max(request.n * 2, NUM_SAMPLES)
+    char_seq, char_lengths = text_to_tensor(normalised, device, batch_size=batch)
+    candidates = generate_all_candidates(
+        char_seq, char_lengths, 1000, request.bias, device, n_candidates=request.n
+    )
+    return CandidatesResponse(candidates=candidates, text=normalised)
+
+
+@app.post("/feedback/save", response_model=SaveFeedbackResponse, tags=["Feedback"])
+async def save_feedback(request: SaveFeedbackRequest):
+    """Save a single accepted or rejected sample."""
+    if feedback_store is None:
+        raise HTTPException(status_code=503, detail="Feedback store not ready.")
+    sample_id = feedback_store.save_sample(
+        char=request.text,
+        strokes=request.strokes,
+        bias=request.bias,
+        accepted=request.accepted,
+    )
+    return SaveFeedbackResponse(id=sample_id, total_accepted=feedback_store.total_accepted())
+
+
+@app.post("/feedback/fine-tune", response_model=FineTuneResponse, tags=["Feedback"])
+async def trigger_fine_tune(request: FineTuneRequest):
+    """Start a background fine-tuning pass on all accepted samples."""
+    if feedback_store is None or alphabet_map is None:
+        raise HTTPException(status_code=503, detail="Feedback store not ready.")
+    accepted = feedback_store.get_accepted()
+    if len(accepted) < 5:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Need at least 5 accepted samples (have {len(accepted)})."
+        )
+    if fine_tuner.get_status()["running"]:
+        raise HTTPException(status_code=409, detail="Fine-tune already running.")
+    fine_tuner.run_fine_tune(
+        packaged_model_path=MODEL_DIR / METADATA_MODEL_NAME,
+        accepted_samples=accepted,
+        char_to_index=alphabet_map,
+        n_epochs=request.n_epochs,
+        lr=request.lr,
+        on_complete=_reload_scripted_model,
+    )
+    return FineTuneResponse(started=True, message=f"Fine-tuning started on {len(accepted)} samples.")
+
+
+@app.get("/feedback/stats", response_model=FeedbackStatsResponse, tags=["Feedback"])
+async def feedback_stats():
+    """Return accepted sample counts and fine-tune status."""
+    if feedback_store is None:
+        raise HTTPException(status_code=503, detail="Feedback store not ready.")
+    return FeedbackStatsResponse(
+        total_accepted=feedback_store.total_accepted(),
+        per_character=feedback_store.get_stats(),
+        fine_tune_status=fine_tuner.get_status(),
+    )
+
+
 @app.post("/generate", response_model=HandwritingResponse, tags=["Generation"])
 async def generate_handwriting_endpoint(request: HandwritingRequest):
     if not all([scripted_model, model_metadata, device, alphabet_map, max_text_len]):

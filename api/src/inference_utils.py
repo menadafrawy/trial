@@ -183,6 +183,22 @@ def filter_spatially_distant_strokes(
     return result if result else strokes
 
 
+def trim_to_n_segments(strokes: list[list[float]], n: int) -> list[list[float]]:
+    """Keep only the first n pen-down segments, dropping everything after."""
+    count = 0
+    in_seg = False
+    for i, s in enumerate(strokes):
+        if s[2] < 0.5:
+            if not in_seg:
+                count += 1
+                in_seg = True
+            if count > n:
+                return strokes[:i]
+        else:
+            in_seg = False
+    return strokes
+
+
 def convert_offsets_to_absolute_coords(stroke_offsets: list[list[float]]) -> list[list[float]]:
     if not stroke_offsets:
         return []

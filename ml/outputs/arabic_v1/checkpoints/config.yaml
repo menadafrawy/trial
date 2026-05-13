@@ -1,0 +1,54 @@
+dataset:
+  alphabet_string: "\u0621\u0627\u0628\u062A\u062B\u062C\u062D\u062E\u062F\u0630\u0631\
+    \u0632\u0633\u0634\u0635\u0636\u0637\u0638\u0639\u063A\u0641\u0642\u0643\u0644\
+    \u0645\u0646\u0647\u0648\u064A"
+  max_stroke_len: 1200
+  max_text_len: 2
+  offset_filter_threshold: 60
+  random_seed: 42
+  train_split_ration: 0.8
+model_params:
+  attention_mixture_components: 10
+  dropout_prob: 0.2
+  eps: 1.0e-08
+  lstm_size: 400
+  output_mixture_components: 20
+  sigma_eps: 0.001
+paths:
+  config_file_path: config/config.yaml
+  outputs_dir: outputs
+  processed_data_dir: data/processed
+  raw_data_root: data/raw/aolah
+prediction_params:
+  max_length: 1200
+training_params:
+  batch_sizes:
+  - 64
+  - 96
+  - 128
+  beta1_decays:
+  - 0.9
+  - 0.95
+  - 0.98
+  grad_clip: 5.0
+  learning_rates:
+  - 0.001
+  - 0.0005
+  - 0.0001
+  log_interval: 10
+  num_training_steps: 20000
+  optimizer_type: adam
+  patiences:
+  - 800
+  - 600
+  - 400
+  weight_decay: 1.0e-05
+wandb:
+  enabled: false
+  log_model_checkpoint_freq: 0
+  project_name: KinematicCalligrapher
+  tags:
+  - arabic
+  - character_level
+  - aolah
+  watch_model_log_freq: 100

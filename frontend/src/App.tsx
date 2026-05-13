@@ -4,6 +4,7 @@ import GenerateButton from "./components/GenerateButton/GenerateButton";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import HandwritingCanvas from "./components/HandwritingCanvas/HandwritingCanvas";
 import Slider from "./components/Slider/Slider";
+import FeedbackPanel from "./components/FeedbackPanel/FeedbackPanel";
 import { useHandwritingAPI } from "./hooks/useHandwritingAPI";
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
   const [animationSpeed, setAnimationSpeed] = useState(20); // default speed: 20ms
   const [strokeWidth, setStrokeWidth] = useState(4); // default stroke width: 4
   const [showSettings, setShowSettings] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
 
   // temporary state for settings popup
   const [tempBias, setTempBias] = useState(bias);
@@ -92,6 +94,13 @@ function App() {
         <div className="header-content">
           <h1>Scriptify</h1>
           <div className="header-controls">
+            <button
+              className={`feedback-toggle ${showFeedback ? "active" : ""}`}
+              onClick={() => setShowFeedback((v) => !v)}
+              aria-label="Toggle feedback mode"
+            >
+              Feedback Mode
+            </button>
             <button
               className={`settings-toggle ${showSettings ? "active" : ""}`}
               onClick={openSettings}
@@ -173,39 +182,47 @@ function App() {
       )}
 
       <main className="chat-container">
-        {/* Canvas Area */}
-        <div className="canvas-area">
-          <HandwritingCanvas
-            strokes={strokes}
-            animationSpeed={animationSpeed}
-            strokeColor="#1a1a1a"
-            strokeWidth={strokeWidth}
-            canvasWidth={850}
-            canvasHeight={400}
-            showControls={strokes.length > 0}
-          />
-        </div>
-
-        {/* Input Area */}
-        <div className="input-area">
-          {error && <ErrorMessage message={error} />}
-
-          <div className="input-container">
-            <TextInput
-              onTextChange={handleTextChange}
-              onEnterPress={handleGenerate}
-              hasError={!!error}
-              disabled={isLoading}
-              maxLength={30}
-              placeholder="Type your message..."
-            />
-            <GenerateButton
-              onClick={handleGenerate}
-              disabled={inputText.trim().length === 0 || isLoading}
-              isLoading={isLoading}
-            />
+        {showFeedback ? (
+          <div className="feedback-area">
+            <FeedbackPanel />
           </div>
-        </div>
+        ) : (
+          <>
+            {/* Canvas Area */}
+            <div className="canvas-area">
+              <HandwritingCanvas
+                strokes={strokes}
+                animationSpeed={animationSpeed}
+                strokeColor="#1a1a1a"
+                strokeWidth={strokeWidth}
+                canvasWidth={850}
+                canvasHeight={400}
+                showControls={strokes.length > 0}
+              />
+            </div>
+
+            {/* Input Area */}
+            <div className="input-area">
+              {error && <ErrorMessage message={error} />}
+
+              <div className="input-container">
+                <TextInput
+                  onTextChange={handleTextChange}
+                  onEnterPress={handleGenerate}
+                  hasError={!!error}
+                  disabled={isLoading}
+                  maxLength={30}
+                  placeholder="Type your message..."
+                />
+                <GenerateButton
+                  onClick={handleGenerate}
+                  disabled={inputText.trim().length === 0 || isLoading}
+                  isLoading={isLoading}
+                />
+              </div>
+            </div>
+          </>
+        )}
       </main>
     </div>
   );

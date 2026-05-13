@@ -37,6 +37,9 @@ def main():
     step = best.name.split("-")[1]
     print(f"Best checkpoint: {best.name} (step {step})")
 
+    # Always include model-6389 as the warm-start reference
+    warm_start = ckpt_dir / "model-6389"
+
     # Clean and build staging
     if staging.exists():
         shutil.rmtree(staging)
@@ -71,6 +74,9 @@ def main():
     ckpt_staging = staging / "checkpoints" / "files"
     ckpt_staging.mkdir(parents=True, exist_ok=True)
     shutil.copy2(best, ckpt_staging / best.name)
+    if warm_start.exists() and warm_start != best:
+        shutil.copy2(warm_start, ckpt_staging / warm_start.name)
+        print(f"Also including warm-start checkpoint: {warm_start.name}")
     config_src = ml_dir / "outputs" / "arabic_v1" / "config" / "config.yaml"
     shutil.copy2(config_src, ckpt_staging / "config.yaml")
     upload(staging / "checkpoints", "Arabic Handwriting Checkpoints",

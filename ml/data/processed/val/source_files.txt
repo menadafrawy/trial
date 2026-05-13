@@ -1,358 +1,358 @@
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\user 58\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\user 60\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\alif Strokes\alif strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\user 29\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 022\user 23\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\ba Strokes\ba strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\ta Strokes\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\ta Strokes\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\ta Strokes\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\ta Strokes\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\user 8\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\user 27\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\user 29\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\user 47\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\ta Strokes\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 006\user 7\ta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\tha Strokes\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\tha Strokes\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\user 38\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\tha Strokes\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\user 59\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\tha Strokes\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\user 30\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\tha Strokes\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\user 65\tha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 025\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\user 27\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\jeem Strokes\jeem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\user 19\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\hha Strokes\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\user 61\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\hha Strokes\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 049\user 50\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\hha Strokes\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\user 27\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 009\hha Strokes\hha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 006\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\user 24\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\user 19\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 001\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\user 28\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 069\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\kha Strokes\kha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\dal Strokes\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\user 71\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\dal Strokes\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 034\dal Strokes\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\dal Strokes\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\user 47\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\dal Strokes\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\user 13\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\dal Strokes\dal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\user 33\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 038\user 39\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 009\user 10\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\thal Strokes\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\thal strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\user 63\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\user 38\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\ra Strokes\ra strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\zay Strokes\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\zay Strokes\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\user 60\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\zay Strokes\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\zay Strokes\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\user 11\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\user 49\ZAY strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\zay Strokes\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\user 61\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\zay strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 049\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 009\user 10\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\user 4\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\seen Strokes\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\seen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 066\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 038\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\user 71\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 011\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 034\user 35\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\user 42\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\sheen Strokes\sheen strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\user 25\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 066\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\sad Strokes\sad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\user 11\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\user 62\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\user 25\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 055\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\dhad Strokes\dhad strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 055\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\user 66\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 069\user 70\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\tta Strokes\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\tta strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\zha Strokes\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\user 66\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\user 36\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\zha Strokes\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\zha Strokes\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\user 33\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\zha Strokes\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\zha Strokes\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\zha Strokes\zha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\user 28\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\ain Strokes\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\ain Strokes\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 069\ain Strokes\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 052\ain Strokes\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\ain Strokes\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\user 4\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\user 13\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\user 29\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 004\ain Strokes\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\ain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 019\ghain Strokes\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\user 36\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\user 24\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\ghain Strokes\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\ghain Strokes\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\user 62\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 025\user 26\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 022\user 23\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\user 22\ghain strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\user 47\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\user 14\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\user 65\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\fa Strokes\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 066\user 67\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\fa strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\user 63\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\user 49\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\user 13\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\qaf Strokes\qaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 036\user 37\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\user 22\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 019\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 055\kaf Strokes\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\user 30\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\kaf strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\user 30\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\user 42\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\user 62\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 019\user 20\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\lam Strokes\lam strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 034\meem Strokes\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\meem Strokes\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\meem Strokes\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\user 36\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\user 66\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\meem Strokes\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\user 22\meem strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 004\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\noon Strokes\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\noon strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\ha Strokes\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\ha Strokes\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\ha Strokes\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\user 25\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\ha Strokes\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\user 64\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\ha Strokes\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\ha Strokes\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\ha strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 036\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 004\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 038\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\waw Strokes\waw strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\ya Strokes\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\user 34\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\ya Strokes\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\user 11\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\ya Strokes\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\ya Strokes\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 036\user 37\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\ya Strokes\ya strokes.csv
-C:\Users\seifo\OneDrive\Documents\GitHub\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 011\user 12\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\user 58\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\user 60\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\alif Strokes\alif strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\user 29\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 022\user 23\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\ba Strokes\ba strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\ta Strokes\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\ta Strokes\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\ta Strokes\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\ta Strokes\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\user 8\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\user 27\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\user 29\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\user 47\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\ta Strokes\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 006\user 7\ta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\tha Strokes\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\tha Strokes\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\user 38\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\tha Strokes\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\user 59\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\tha Strokes\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\user 30\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\tha Strokes\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\user 65\tha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 025\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\user 27\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\jeem Strokes\jeem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\user 19\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\hha Strokes\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\user 61\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\hha Strokes\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 049\user 50\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\hha Strokes\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\user 27\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 009\hha Strokes\hha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 006\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\user 24\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\user 19\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 001\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\user 28\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 069\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\kha Strokes\kha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\dal Strokes\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\user 71\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\dal Strokes\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 034\dal Strokes\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\dal Strokes\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\user 47\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\dal Strokes\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\user 13\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\dal Strokes\dal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\user 33\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 038\user 39\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 009\user 10\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\thal Strokes\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\thal strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\user 63\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\user 38\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\ra Strokes\ra strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\zay Strokes\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\zay Strokes\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\user 60\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\zay Strokes\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\zay Strokes\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\user 11\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\user 49\ZAY strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\zay Strokes\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\user 61\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\zay strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 049\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 009\user 10\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\user 4\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\seen Strokes\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\seen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 066\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 038\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\user 71\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 011\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 034\user 35\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\user 42\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\sheen Strokes\sheen strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 018\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\user 25\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\user 16\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 066\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\sad Strokes\sad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\user 11\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\user 62\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 026\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\user 25\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 055\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\dhad Strokes\dhad strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 055\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\user 66\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 069\user 70\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\tta Strokes\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\tta strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\zha Strokes\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\user 66\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 044\user 45\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\user 36\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\zha Strokes\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\zha Strokes\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 053\user 54\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 032\user 33\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\zha Strokes\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\zha Strokes\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\zha Strokes\zha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\user 28\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\ain Strokes\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\ain Strokes\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 069\ain Strokes\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 052\ain Strokes\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\ain Strokes\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\user 4\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\user 13\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\user 29\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 004\ain Strokes\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\ain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 019\ghain Strokes\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\user 36\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\user 24\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\ghain Strokes\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\ghain Strokes\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\user 62\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 025\user 26\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 022\user 23\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\user 31\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\user 22\ghain strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\user 47\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 013\user 14\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 064\user 65\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 057\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\fa Strokes\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 066\user 67\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\fa strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\user 55\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 062\user 63\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 048\user 49\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 059\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 060\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 012\user 13\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\qaf Strokes\qaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 027\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 070\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 036\user 37\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 067\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\user 22\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 019\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 055\kaf Strokes\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\user 30\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\kaf strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 023\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 029\user 30\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 056\user 57\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\user 42\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\user 62\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 015\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 030\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 019\user 20\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\lam Strokes\lam strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 034\meem Strokes\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 058\meem Strokes\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\meem Strokes\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 014\user 15\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\user 36\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\user 66\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 037\meem Strokes\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\user 22\meem strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 016\user 17\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 003\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 061\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 004\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 035\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\noon Strokes\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\noon strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\ha Strokes\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 005\user 6\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 054\ha Strokes\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\ha Strokes\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 024\user 25\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\user 40\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 068\ha Strokes\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 063\user 64\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\ha Strokes\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 041\ha Strokes\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 043\user 44\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 042\user 43\ha strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 036\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 065\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 039\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 004\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 020\user 21\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 038\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 046\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 021\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\user 3\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 017\user 18\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\waw Strokes\waw strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 031\user 32\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 007\ya Strokes\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\user 48\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 033\user 34\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\ya Strokes\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 010\user 11\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 045\user 46\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 051\user 52\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 047\ya Strokes\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 028\ya Strokes\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 036\user 37\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 002\ya Strokes\ya strokes.csv
+D:\guc\another trial\trial\ml\data\raw\aolah\AOLAH CHARACTERS TRAINING (1)\AOLAH CHARACTERS TRAINING\USER 011\user 12\ya strokes.csv

@@ -40,7 +40,15 @@ FOLDER_TO_ARABIC: dict[str, str] = {
     'qaf':   'ق',  # U+0642
 }
 
-# All 28 Arabic characters present in the dataset, sorted by Unicode codepoint.
+# Stroke-ID → Arabic char for AOLAH STROKES TRAINING.
+# Only stroke 260 (ء) is used — the other 16 IDs are sub-character
+# components that don't map to single isolated characters.
+STROKE_ID_TO_ARABIC: dict[int, str] = {
+    260: 'ء',  # U+0621 ARABIC LETTER HAMZA
+}
+
+# All 28 Arabic characters from the CHARACTERS TRAINING dataset, sorted by Unicode codepoint.
+# ء (from STROKES TRAINING) is excluded for now — too few clean samples for reliable training.
 ARABIC_ALPHABET: list[str] = sorted(set(FOLDER_TO_ARABIC.values()))
 # = ['ا','ب','ت','ث','ج','ح','خ','د','ذ','ر','ز','س','ش','ص','ض','ط','ظ','ع','غ','ف','ق','ك','ل','م','ن','ه','و','ي']
 
@@ -204,6 +212,83 @@ def _collect_format_b(data_root: Path) -> list[CharacterSample]:
     return samples
 
 
+def _load_strokes_csv(csv_path: Path, min_points: int = 5) -> np.ndarray | None:
+    """
+    Load an AOLAH STROKES TRAINING CSV (x, y, stroke_id, [class_id on row 1 only]).
+
+    The format has 4 comma-separated columns but column 4 is only populated on the
+    first row (the class ID) and empty on all others, so numpy's loadtxt fails with
+    a type error.  We parse line-by-line and take only the first three columns.
+
+    Returns float32 (N, 3) array of (x, y, eos) or None if too short / unreadable.
+    """
+    rows: list[list[float]] = []
+    try:
+        for line in csv_path.read_text(encoding='utf-8').splitlines():
+            parts = [p.strip() for p in line.split(',')]
+            if len(parts) < 3:
+                continue
+            try:
+                rows.append([float(parts[0]), float(parts[1]), float(parts[2])])
+            except ValueError:
+                continue
+    except Exception as e:
+        print(f"  Warning: could not read {csv_path}: {e}")
+        return None
+
+    if len(rows) < min_points:
+        return None
+
+    return _stroke_id_to_eos(np.array(rows, dtype=np.float32))
+
+
+def _collect_strokes_training(data_root: Path) -> list[CharacterSample]:
+    """
+    Collect ء samples from AOLAH STROKES TRAINING.
+
+    Layout:
+        data_root/AOLAH STROKES TRAINING/AOLAH STROKES TRAINING/
+            user NNN/
+                stroke 260.csv    ← ء (hamza)
+
+    Writer IDs = NNN + 400 to avoid collision with CHARACTERS TRAINING IDs.
+    Single-tap recordings (< 5 points) are filtered out.
+    """
+    strokes_root = (
+        data_root / 'AOLAH STROKES TRAINING' / 'AOLAH STROKES TRAINING'
+    )
+    if not strokes_root.exists():
+        return []
+
+    samples: list[CharacterSample] = []
+
+    for user_dir in sorted(strokes_root.iterdir()):
+        if not user_dir.is_dir() or not user_dir.name.startswith('user '):
+            continue
+        try:
+            writer_id = int(user_dir.name.split()[1]) + 400
+        except (IndexError, ValueError):
+            continue
+
+        for stroke_id, arabic_char in STROKE_ID_TO_ARABIC.items():
+            csv_file = user_dir / f'stroke {stroke_id}.csv'
+            if not csv_file.exists():
+                continue
+
+            strokes = _load_strokes_csv(csv_file)
+            if strokes is None:
+                continue
+
+            samples.append(CharacterSample(
+                char=arabic_char,
+                writer_id=writer_id,
+                strokes=strokes,
+                source_file=str(csv_file),
+            ))
+
+    return samples
+
+
 def collect_samples(data_root: Union[str, Path]) -> list[CharacterSample]:
     """
     Collect all character stroke samples from the AOLAH dataset.
@@ -229,14 +314,17 @@ def collect_samples(data_root: Union[str, Path]) -> list[CharacterSample]:
 
     fmt_a = _collect_format_a(data_root)
     fmt_b = _collect_format_b(data_root)
+    _alphabet_set = set(ARABIC_ALPHABET)
+    strokes = [s for s in _collect_strokes_training(data_root) if s.char in _alphabet_set]
 
-    all_samples = fmt_a + fmt_b
+    all_samples = fmt_a + fmt_b + strokes
     all_samples.sort(key=lambda s: (s.writer_id, s.char))
 
     chars_found = sorted(set(s.char for s in all_samples))
+    n_alpha = len(ARABIC_ALPHABET)
     print(
         f"Collected {len(all_samples)} samples "
-        f"({len(fmt_a)} Format-A, {len(fmt_b)} Format-B) "
-        f"covering {len(chars_found)}/28 Arabic characters."
+        f"({len(fmt_a)} Format-A, {len(fmt_b)} Format-B, {len(strokes)} Strokes-Training) "
+        f"covering {len(chars_found)}/{n_alpha} Arabic characters."
     )
     return all_samples

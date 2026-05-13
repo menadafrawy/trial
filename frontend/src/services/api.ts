@@ -98,6 +98,74 @@ export const generateHandwriting = async (
   }
 };
 
+// ── Feedback API ──────────────────────────────────────────────────────────────
+
+export interface CandidatesResponse {
+  candidates: number[][][];
+  text: string;
+}
+
+export interface FeedbackStats {
+  total_accepted: number;
+  per_character: Record<string, number>;
+  fine_tune_status: { running: boolean; progress: string; last_result: unknown };
+}
+
+export const generateCandidates = async (
+  text: string,
+  bias: number,
+  n: number = 6
+): Promise<CandidatesResponse> => {
+  const LOCAL_URL = "http://127.0.0.1:8000";
+  const response = await fetch(`${LOCAL_URL}/feedback/candidates`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text: text.trim(), bias, n }),
+  });
+  if (!response.ok) throw new Error(`Candidates request failed: ${response.status}`);
+  return response.json();
+};
+
+export const saveFeedback = async (
+  text: string,
+  strokes: number[][],
+  bias: number,
+  accepted: boolean
+): Promise<{ id: string; total_accepted: number }> => {
+  const LOCAL_URL = "http://127.0.0.1:8000";
+  const response = await fetch(`${LOCAL_URL}/feedback/save`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text, strokes, bias, accepted }),
+  });
+  if (!response.ok) throw new Error(`Save feedback failed: ${response.status}`);
+  return response.json();
+};
+
+export const triggerFineTune = async (
+  n_epochs: number = 3,
+  lr: number = 1e-5
+): Promise<{ started: boolean; message: string }> => {
+  const LOCAL_URL = "http://127.0.0.1:8000";
+  const response = await fetch(`${LOCAL_URL}/feedback/fine-tune`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ n_epochs, lr }),
+  });
+  if (!response.ok) {
+    const err = await response.json().catch(() => ({ detail: response.statusText }));
+    throw new Error(err.detail || "Fine-tune failed");
+  }
+  return response.json();
+};
+
+export const getFeedbackStats = async (): Promise<FeedbackStats> => {
+  const LOCAL_URL = "http://127.0.0.1:8000";
+  const response = await fetch(`${LOCAL_URL}/feedback/stats`);
+  if (!response.ok) throw new Error("Stats request failed");
+  return response.json();
+};
+
 export const checkAPIHealth = async (): Promise<boolean> => {
   try {
     const response = await fetch(`${API_BASE_URL}/health`, {

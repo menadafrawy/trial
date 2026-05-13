@@ -92,6 +92,26 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
 
       // helper function to draw smooth curves through points
       const drawSmoothPath = (points: number[][]) => {
+        if (points.length === 0) return;
+
+        // Detect dot/diacritic segments: small cluster → render as filled circle
+        const xs = points.map(p => p[0]);
+        const ys = points.map(p => p[1]);
+        const xSpan = Math.max(...xs) - Math.min(...xs);
+        const ySpan = Math.max(...ys) - Math.min(...ys);
+        const dotThreshold = Math.max(strokeWidth * 3, 14);
+        if (xSpan < dotThreshold && ySpan < dotThreshold) {
+          const cx = xs.reduce((a, b) => a + b, 0) / xs.length;
+          const cy = ys.reduce((a, b) => a + b, 0) / ys.length;
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(cx, cy, strokeWidth * 1.5, 0, 2 * Math.PI);
+          ctx.fillStyle = strokeColor;
+          ctx.fill();
+          ctx.restore();
+          return;
+        }
+
         if (points.length < 2) return;
 
         // apply smoothing to the points
@@ -356,6 +376,24 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
 
     // helper function for smooth curves
     const drawSmoothPath = (points: number[][]) => {
+      if (points.length === 0) return;
+
+      // Dot detection: small cluster → filled circle
+      const xs = points.map(p => p[0]);
+      const ys = points.map(p => p[1]);
+      const xSpan = Math.max(...xs) - Math.min(...xs);
+      const ySpan = Math.max(...ys) - Math.min(...ys);
+      const dotThreshold = Math.max(downloadStrokeWidth * 3, 14);
+      if (xSpan < dotThreshold && ySpan < dotThreshold) {
+        const cx = xs.reduce((a, b) => a + b, 0) / xs.length;
+        const cy = ys.reduce((a, b) => a + b, 0) / ys.length;
+        tempCtx.beginPath();
+        tempCtx.arc(cx, cy, downloadStrokeWidth * 1.5, 0, 2 * Math.PI);
+        tempCtx.fillStyle = strokeColor;
+        tempCtx.fill();
+        return;
+      }
+
       if (points.length < 2) return;
 
       tempCtx.beginPath();

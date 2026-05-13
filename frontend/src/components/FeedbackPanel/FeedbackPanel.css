@@ -1,0 +1,269 @@
+.feedback-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.feedback-header h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.feedback-subtitle {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Controls */
+.feedback-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.feedback-input {
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  width: 160px;
+  text-align: right;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.feedback-input:focus {
+  border-color: #1a1a2e;
+}
+
+.bias-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #555;
+}
+.bias-control input[type="range"] {
+  width: 100px;
+}
+
+.btn-generate-candidates {
+  padding: 10px 20px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+.btn-generate-candidates:hover:not(:disabled) {
+  background: #2d2d4e;
+}
+.btn-generate-candidates:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feedback-error {
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 8px 12px;
+  background: #fdf0ef;
+  border-radius: 6px;
+}
+
+/* Candidate grid */
+.candidates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .candidates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.candidate-card {
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fafafa;
+}
+
+.candidate-card.decision-accepted {
+  border-color: #27ae60;
+  background: #f0faf4;
+}
+.candidate-card.decision-rejected {
+  border-color: #e74c3c;
+  background: #fdf5f5;
+  opacity: 0.65;
+}
+
+.candidate-canvas-wrapper {
+  padding: 8px;
+  background: #fff;
+}
+
+.candidate-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  background: #f5f5f5;
+  border-top: 1px solid #eee;
+}
+
+.btn-accept,
+.btn-reject {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-accept {
+  background: #27ae60;
+  color: #fff;
+}
+.btn-accept:hover:not(:disabled) {
+  background: #219a52;
+}
+.btn-reject {
+  background: #e74c3c;
+  color: #fff;
+}
+.btn-reject:hover:not(:disabled) {
+  background: #c0392b;
+}
+.btn-accept:disabled,
+.btn-reject:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.decision-badge {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.badge-accepted {
+  color: #27ae60;
+}
+.badge-rejected {
+  color: #e74c3c;
+}
+
+/* Stats + fine-tune footer */
+.feedback-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.feedback-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-total {
+  font-size: 0.88rem;
+  color: #444;
+}
+
+.per-char-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.char-badge {
+  font-size: 0.78rem;
+  padding: 3px 8px;
+  background: #eef0ff;
+  border-radius: 20px;
+  color: #3949ab;
+  font-weight: 500;
+}
+
+/* Fine-tune section */
+.fine-tune-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.btn-fine-tune {
+  padding: 10px 22px;
+  background: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-fine-tune:hover:not(:disabled) {
+  background: #303f9f;
+}
+.btn-fine-tune:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ft-running {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #3949ab;
+}
+
+.ft-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #c5cae9;
+  border-top-color: #3949ab;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.ft-status {
+  font-size: 0.82rem;
+  color: #555;
+  margin: 0;
+}
+
+.ft-result {
+  font-size: 0.8rem;
+  color: #27ae60;
+  margin: 0;
+}
