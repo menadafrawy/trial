@@ -16,9 +16,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__) 
 
 MODEL_DIR = Path("../../ml/packaged_models")
-SCRIPTED_MODEL_NAME = "handwriting_model_v1_step7424.scripted.pt"  # model-7424 only (feedback disabled)
-BASE_MODEL_NAME = "handwriting_model_v1_step7424.scripted.pt"      # same — no ensemble
-METADATA_MODEL_NAME = "handwriting_model.pt"
+SCRIPTED_MODEL_NAME = "handwriting_model_finetuned_188samples.scripted.pt"
+BASE_MODEL_NAME = "handwriting_model_v1_step7424.scripted.pt"
+METADATA_MODEL_NAME = "handwriting_model_finetuned_188samples.pt"
 
 scripted_model: Optional[torch.jit.ScriptModule] = None   # fine-tuned
 base_model: Optional[torch.jit.ScriptModule] = None       # original model-7424
@@ -307,18 +307,21 @@ def generate_strokes(
                 trimmed = trim_stroke_noise(abs_coords)
                 trimmed = filter_spatially_distant_strokes(trimmed)
                 if is_degenerate_strokes(trimmed):
-                    continue  # skip bias-collapse straight-line candidates
+                    continue
+                # Trim to target segment count before scoring — matches feedback pipeline.
+                # Without this, a good candidate with trailing noise (5 segs) scores 3.5
+                # and loses to a bare L-shaped body+dots (exactly 4 segs) that scores 4.0.
+                if target_segs is not None and _count_pen_segments(trimmed) > target_segs:
+                    trimmed = trim_to_n_segments(trimmed, target_segs)
+                    if is_degenerate_strokes(trimmed):
+                        continue
                 score = _candidate_score(trimmed, target_segs, char=char)
                 if score > best_score:
                     best_score = score
                     best_trimmed = trimmed
 
-            # Hard-trim to target segment count to eliminate trailing noise strokes
-            if target_segs is not None and _count_pen_segments(best_trimmed) > target_segs:
-                best_trimmed = trim_to_n_segments(best_trimmed, target_segs)
-
             # Snap dot segments to canonical above/below position
-            if char:
+            if char and best_trimmed:
                 best_trimmed = canonicalize_dot_positions(best_trimmed, char)
 
             return best_trimmed

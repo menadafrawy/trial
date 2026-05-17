@@ -1,0 +1,19 @@
+# Dependencies
+frontend/node_modules/
+
+# Build artifacts
+frontend/dist/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# ML training artifacts (large, not needed for API/frontend work)
+ml/outputs/
+ml/data/
+ml/kaggle/
+
+# Model files (binary, not readable)
+ml/packaged_models/
+
+# Conda environments
+ml/environment.yml

@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   const [inputText, setInputText] = useState("");
-  const [bias, setBias] = useState(2); // default style value
+  const [bias, setBias] = useState(1.5);
   const [animationSpeed, setAnimationSpeed] = useState(20); // default speed: 20ms
   const [strokeWidth, setStrokeWidth] = useState(4); // default stroke width: 4
   const [showSettings, setShowSettings] = useState(false);

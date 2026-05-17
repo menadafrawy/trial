@@ -51,11 +51,14 @@ def encode_text(text: str, char_to_index_map: Dict[str, int],
     return np.array([padded_encoded]), true_length
 
 
-def trim_stroke_noise(strokes: list[list[float]], min_segment_pts: int = 3, max_consecutive_tiny: int = 2) -> list[list[float]]:
+def trim_stroke_noise(strokes: list[list[float]], min_segment_pts: int = 3, max_consecutive_tiny: int = 4) -> list[list[float]]:
     """Remove noisy trailing micro-segments that appear after the letter is complete.
 
-    Identifies pen-down segments shorter than min_segment_pts and trims output at
-    the first run of max_consecutive_tiny such segments in a row.
+    Only starts counting tiny segments as noise after at least one substantial
+    segment has been seen — this prevents Arabic dots (which are legitimately
+    small) from being misclassified as noise when they appear before or after
+    the main body. max_consecutive_tiny=4 allows up to 3 consecutive dots
+    (needed for ث and ش) before triggering a cut.
     """
     if not strokes:
         return strokes
@@ -78,19 +81,21 @@ def trim_stroke_noise(strokes: list[list[float]], min_segment_pts: int = 3, max_
     if not segments:
         return strokes
 
-    # Find first run of max_consecutive_tiny tiny segments
+    # Only cut tiny segments that trail after a substantial one.
+    # Without this guard, valid Arabic dots get cut when they appear after the body.
+    seen_substantial = False
     tiny_run = 0
     cutoff_start = -1
-    for seg_idx, (start, size) in enumerate(segments):
-        if size < min_segment_pts:
+    for seg_idx, (_, size) in enumerate(segments):
+        if size >= min_segment_pts:
+            seen_substantial = True
+            tiny_run = 0
+        elif seen_substantial:
             tiny_run += 1
             if tiny_run >= max_consecutive_tiny:
-                # cut before the first tiny segment in this run
                 first_tiny = seg_idx - (max_consecutive_tiny - 1)
                 cutoff_start = segments[first_tiny][0]
                 break
-        else:
-            tiny_run = 0
 
     if cutoff_start == -1:
         return strokes
@@ -113,9 +118,9 @@ def is_degenerate_strokes(strokes: list[list[float]], max_aspect: float = 20.0, 
 
 def filter_spatially_distant_strokes(
     strokes: list[list[float]],
-    tight_factor: float = 0.2,
-    loose_factor: float = 0.6,
-    dot_max_pts: int = 8,
+    tight_factor: float = 0.5,
+    loose_factor: float = 1.2,
+    dot_max_pts: int = 12,
 ) -> list[list[float]]:
     """Remove pen-down segments spatially far from the main character body.
 
@@ -123,6 +128,12 @@ def filter_spatially_distant_strokes(
     robust against long thin stray lines that have many points but near-zero height.
     Small segments (diacritical dots, ≤ dot_max_pts) get a generous loose_factor
     margin; larger segments get a tight_factor margin to exclude wandering strokes.
+
+    tight_factor raised 0.2→0.5: allows multi-stroke letter bodies where strokes
+    are drawn in separate parts without filtering out the second part.
+    loose_factor raised 0.6→1.2: gives dots enough vertical room to sit above/below
+    a flat body without being incorrectly filtered as spatially distant.
+    dot_max_pts raised 8→12: catches larger dot renderings from the model.
     """
     if not strokes:
         return strokes

@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m uvicorn src.main:app --host 0.0.0.0 --port 8000 --app-dir src)",
+      "Bash(npm run *)",
+      "Bash(npm install*)",
+      "Bash(python main.py*)",
+      "Bash(uvicorn main:app*)",
+      "Bash(python -m src.*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$d = [Console]::In.ReadToEnd() | ConvertFrom-Json; $f = $d.tool_input.file_path; if ($f -match '\\.(ts|tsx)$' -and $f -like '*frontend*') { Set-Location 'c:/Users/seifo/OneDrive/Documents/GitHub/trial/frontend'; npm run type-check }",
+            "timeout": 60,
+            "statusMessage": "Type-checking TypeScript..."
+          },
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$d = [Console]::In.ReadToEnd() | ConvertFrom-Json; $f = $d.tool_input.file_path; if ($f -match '\\.(ts|tsx|css)$' -and $f -like '*frontend*') { Set-Location 'c:/Users/seifo/OneDrive/Documents/GitHub/trial/frontend'; npm run lint }",
+            "timeout": 60,
+            "statusMessage": "Linting frontend..."
+          }
+        ]
+      }
+    ]
+  }
+}

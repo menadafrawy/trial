@@ -9,8 +9,9 @@ export interface HandwritingResponse {
   message?: string;
 }
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "https://h3nock-scriptify-api.hf.space/";
+const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || "https://h3nock-scriptify-api.hf.space"
+).replace(/\/$/, "");
 const DEFAULT_TIMEOUT = 180000;
 
 class ApiError extends Error {
@@ -94,6 +95,9 @@ export const generateHandwriting = async (
   } catch (error) {
     cleanup();
     console.error("API Error:", error);
+    if (error instanceof ApiError) {
+      throw error;
+    }
     throw new ApiError(getErrorMessage(error));
   }
 };
