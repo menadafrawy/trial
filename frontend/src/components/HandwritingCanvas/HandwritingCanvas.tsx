@@ -99,7 +99,7 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
         const ys = points.map(p => p[1]);
         const xSpan = Math.max(...xs) - Math.min(...xs);
         const ySpan = Math.max(...ys) - Math.min(...ys);
-        const dotThreshold = Math.max(strokeWidth * 3, 14);
+        const dotThreshold = Math.max(strokeWidth * 6, 40);
         if (xSpan < dotThreshold && ySpan < dotThreshold) {
           const cx = xs.reduce((a, b) => a + b, 0) / xs.length;
           const cy = ys.reduce((a, b) => a + b, 0) / ys.length;
@@ -383,7 +383,7 @@ const HandwritingCanvas: React.FC<HandwritingCanvasProps> = ({
       const ys = points.map(p => p[1]);
       const xSpan = Math.max(...xs) - Math.min(...xs);
       const ySpan = Math.max(...ys) - Math.min(...ys);
-      const dotThreshold = Math.max(downloadStrokeWidth * 3, 14);
+      const dotThreshold = Math.max(downloadStrokeWidth * 6, 40);
       if (xSpan < dotThreshold && ySpan < dotThreshold) {
         const cx = xs.reduce((a, b) => a + b, 0) / xs.length;
         const cy = ys.reduce((a, b) => a + b, 0) / ys.length;

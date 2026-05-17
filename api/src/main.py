@@ -8,18 +8,20 @@ from pathlib import Path
 import logging 
 import time 
 from contextlib import asynccontextmanager
-from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise, filter_spatially_distant_strokes, normalise_arabic, is_degenerate_strokes, trim_to_n_segments
+from inference_utils import construct_alphabet_list, convert_offsets_to_absolute_coords, encode_text, get_alphabet_map, trim_stroke_noise, filter_spatially_distant_strokes, normalise_arabic, is_degenerate_strokes, trim_to_n_segments, canonicalize_dot_positions
 from feedback_store import FeedbackStore
 import fine_tuner
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__) 
 
-MODEL_DIR = Path("../../ml/packaged_models") 
-SCRIPTED_MODEL_NAME = "handwriting_model.scripted.pt" 
-METADATA_MODEL_NAME = "handwriting_model.pt" 
+MODEL_DIR = Path("../../ml/packaged_models")
+SCRIPTED_MODEL_NAME = "handwriting_model_v1_step7424.scripted.pt"  # model-7424 only (feedback disabled)
+BASE_MODEL_NAME = "handwriting_model_v1_step7424.scripted.pt"      # same — no ensemble
+METADATA_MODEL_NAME = "handwriting_model.pt"
 
-scripted_model: Optional[torch.jit.ScriptModule] = None
+scripted_model: Optional[torch.jit.ScriptModule] = None   # fine-tuned
+base_model: Optional[torch.jit.ScriptModule] = None       # original model-7424
 model_metadata: Optional[dict] = None
 device: Optional[torch.device] = None
 alphabet_map: Optional[dict[str, int]] = None
@@ -70,7 +72,7 @@ def _reload_scripted_model():
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Lifespan context manager for startup and shutdown events"""
-    global scripted_model, model_metadata, device, alphabet_map, max_text_len, ALPHABET_LIST, output_mixture_components, lstm_size, attention_mixture_components, ALPHABET_SIZE, feedback_store
+    global scripted_model, base_model, model_metadata, device, alphabet_map, max_text_len, ALPHABET_LIST, output_mixture_components, lstm_size, attention_mixture_components, ALPHABET_SIZE, feedback_store
     logger.info("Attempting to load model resources during startup") 
     try:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -125,6 +127,19 @@ async def lifespan(app: FastAPI):
         else:
             raise ValueError(f"Failed to load content frm metadata file")
 
+        # Load base model-7424 for ensemble generation (optional — non-fatal if missing)
+        base_model_path = MODEL_DIR / BASE_MODEL_NAME
+        if base_model_path.exists():
+            try:
+                base_model = torch.jit.load(str(base_model_path), map_location=device)
+                base_model.eval()
+                logger.info(f"Base model (model-7424) loaded for ensemble from {base_model_path}")
+            except Exception as e:
+                logger.warning(f"Could not load base model for ensemble: {e}")
+                base_model = None
+        else:
+            logger.warning(f"Base model not found at {base_model_path} — running single model only")
+
     except Exception as e:
         logger.error(f"Error loading model resources: {e}", exc_info=True)
         scripted_model = None
@@ -135,8 +150,9 @@ async def lifespan(app: FastAPI):
     
     # Cleanup on shutdown
     logger.info("Shutting down API and cleaning up resources")
-    scripted_model = None 
-    model_metadata = None 
+    scripted_model = None
+    base_model = None
+    model_metadata = None
 
 app = FastAPI(
     title="Scriptify API", 
@@ -228,16 +244,14 @@ def _count_pen_segments(strokes: list[list[float]]) -> int:
     return count
 
 
-def _candidate_score(strokes: list[list[float]], target_segs: int | None) -> float:
+def _candidate_score(strokes: list[list[float]], target_segs: int | None, char: str = "") -> float:
     """Score a candidate stroke sequence. Higher = better.
 
-    If target_segs is known: reward closeness to expected count and penalise excess.
-    Otherwise fall back to raw segment count.
+    Rewards segment count closeness to target and penalises excess segments.
     """
     actual = _count_pen_segments(strokes)
     if target_segs is None:
         return float(actual)
-    # reward each matched segment, penalise each extra one
     return float(min(actual, target_segs)) - 0.5 * max(0, actual - target_segs)
 
 
@@ -256,12 +270,23 @@ def generate_strokes(
 
     with torch.no_grad():
         try:
+            # Sample from fine-tuned model
             stroke_tensors = scripted_model.sample(
                 char_seq,
                 char_lengths,
                 max_length=max_gen_len,
                 bias=api_bias
             )
+
+            # Also sample from base model-7424 if available (ensemble)
+            if base_model is not None:
+                base_tensors = base_model.sample(
+                    char_seq,
+                    char_lengths,
+                    max_length=max_gen_len,
+                    bias=api_bias
+                )
+                stroke_tensors = stroke_tensors + base_tensors
 
             # Each element of stroke_tensors is one sample: shape (T_i, 3)
             candidates: list[list[list[float]]] = []
@@ -273,7 +298,8 @@ def generate_strokes(
                 return []
 
             # Convert to absolute coords, denoise, then pick by expected segment count
-            target_segs = ARABIC_EXPECTED_SEGMENTS.get(input_text.strip()) if input_text else None
+            char = input_text.strip() if input_text else ""
+            target_segs = ARABIC_EXPECTED_SEGMENTS.get(char) if char else None
             best_trimmed: list[list[float]] = []
             best_score = float("-inf")
             for cand in candidates:
@@ -282,7 +308,7 @@ def generate_strokes(
                 trimmed = filter_spatially_distant_strokes(trimmed)
                 if is_degenerate_strokes(trimmed):
                     continue  # skip bias-collapse straight-line candidates
-                score = _candidate_score(trimmed, target_segs)
+                score = _candidate_score(trimmed, target_segs, char=char)
                 if score > best_score:
                     best_score = score
                     best_trimmed = trimmed
@@ -290,6 +316,10 @@ def generate_strokes(
             # Hard-trim to target segment count to eliminate trailing noise strokes
             if target_segs is not None and _count_pen_segments(best_trimmed) > target_segs:
                 best_trimmed = trim_to_n_segments(best_trimmed, target_segs)
+
+            # Snap dot segments to canonical above/below position
+            if char:
+                best_trimmed = canonicalize_dot_positions(best_trimmed, char)
 
             return best_trimmed
 
@@ -304,17 +334,25 @@ def generate_all_candidates(
     api_bias: float,
     current_device: torch.device,
     n_candidates: int = 6,
+    input_text: str = "",
 ) -> list[list[list[float]]]:
-    """Return up to n_candidates valid (non-degenerate) stroke sequences."""
-    global scripted_model
+    """Return up to n_candidates valid stroke sequences from both models combined."""
+    global scripted_model, base_model
     if scripted_model is None:
         return []
+    char = input_text.strip() if input_text else ""
+    target_segs = ARABIC_EXPECTED_SEGMENTS.get(char) if char else None
     with torch.no_grad():
         try:
             stroke_tensors = scripted_model.sample(
                 char_seq, char_lengths, max_length=max_gen_len, bias=api_bias
             )
-            results = []
+            if base_model is not None:
+                base_tensors = base_model.sample(
+                    char_seq, char_lengths, max_length=max_gen_len, bias=api_bias
+                )
+                stroke_tensors = stroke_tensors + base_tensors
+            scored: list[tuple[float, list[list[float]]]] = []
             for tensor in stroke_tensors:
                 if tensor.dim() != 2 or tensor.shape[-1] != 3:
                     continue
@@ -324,10 +362,17 @@ def generate_all_candidates(
                 trimmed = filter_spatially_distant_strokes(trimmed)
                 if is_degenerate_strokes(trimmed):
                     continue
-                results.append(trimmed)
-                if len(results) >= n_candidates:
-                    break
-            return results
+                if target_segs is not None and _count_pen_segments(trimmed) > target_segs:
+                    trimmed = trim_to_n_segments(trimmed, target_segs)
+                    if is_degenerate_strokes(trimmed):
+                        continue
+                if char:
+                    trimmed = canonicalize_dot_positions(trimmed, char)
+                score = _candidate_score(trimmed, target_segs, char=char)
+                scored.append((score, trimmed))
+            # Return best candidates first so the feedback panel shows the best ones
+            scored.sort(key=lambda x: x[0], reverse=True)
+            return [t for _, t in scored[:n_candidates]]
         except Exception as e:
             logger.error(f"Error generating candidates: {e}")
             return []
@@ -355,7 +400,7 @@ class SaveFeedbackResponse(BaseModel):
     total_accepted: int
 
 class FineTuneRequest(BaseModel):
-    n_epochs: int = Field(default=3, ge=1, le=10)
+    n_epochs: int = Field(default=15, ge=1, le=30)
     lr: float = Field(default=1e-5, ge=1e-7, le=1e-3)
 
 class FineTuneResponse(BaseModel):
@@ -381,7 +426,8 @@ async def get_candidates(request: CandidatesRequest):
     batch = max(request.n * 2, NUM_SAMPLES)
     char_seq, char_lengths = text_to_tensor(normalised, device, batch_size=batch)
     candidates = generate_all_candidates(
-        char_seq, char_lengths, 1000, request.bias, device, n_candidates=request.n
+        char_seq, char_lengths, 1000, request.bias, device, n_candidates=request.n,
+        input_text=normalised,
     )
     return CandidatesResponse(candidates=candidates, text=normalised)
 

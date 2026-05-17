@@ -87,7 +87,7 @@ const FeedbackPanel: React.FC = () => {
 
   const handleFineTune = async () => {
     try {
-      const res = await triggerFineTune(3, 1e-5);
+      const res = await triggerFineTune(15, 1e-4);
       setFtStatus(res.message);
       await refreshStats();
     } catch (e) {

@@ -183,6 +183,145 @@ def filter_spatially_distant_strokes(
     return result if result else strokes
 
 
+# Per-character dot configuration: (expected_dot_count, 'above' | 'below').
+# Model coordinate space: y+ = up, so "above" = higher y, "below" = lower y.
+_DOT_CONFIG: dict[str, tuple[int, str]] = {
+    'ب': (1, 'below'),
+    'ت': (2, 'above'),
+    'ث': (3, 'above'),
+    'ج': (1, 'below'),
+    'خ': (1, 'above'),
+    'ذ': (1, 'above'),
+    'ز': (1, 'above'),
+    'ش': (3, 'above'),
+    'ض': (1, 'above'),
+    'ظ': (1, 'above'),
+    'غ': (1, 'above'),
+    'ف': (1, 'above'),
+    'ق': (2, 'above'),
+    'ن': (1, 'above'),
+    'ي': (2, 'below'),
+}
+_DOT_SEG_MAX_PTS: int = 10  # segments with ≤ this many points are treated as dots
+
+
+def canonicalize_dot_positions(strokes: list[list[float]], char: str) -> list[list[float]]:
+    """Place dot segments at canonical positions relative to the character body.
+
+    Uses _DOT_CONFIG to determine expected dot count and direction per character.
+    Dots are placed centered on the body horizontally:
+      1 dot  → centered at body_center_x
+      2 dots → side-by-side at body_center_x ± spacing
+      3 dots → pyramid: 2 on bottom row ± spacing, 1 apex centered above/below them
+    All dot segments are moved; their internal shape (relative offsets) is preserved.
+    """
+    char = char.strip()
+    if char not in _DOT_CONFIG:
+        return strokes
+    dot_count, direction = _DOT_CONFIG[char]
+
+    if not strokes:
+        return strokes
+
+    # Parse into (start_idx, end_idx, [xy points])
+    segs: list[tuple[int, int, list[list[float]]]] = []
+    in_seg = False
+    seg_start = 0
+    seg_pts: list[list[float]] = []
+    for i, s in enumerate(strokes):
+        pen_down = s[2] < 0.5
+        if pen_down and not in_seg:
+            seg_start = i
+            in_seg = True
+            seg_pts = [[s[0], s[1]]]
+        elif pen_down and in_seg:
+            seg_pts.append([s[0], s[1]])
+        elif not pen_down and in_seg:
+            segs.append((seg_start, i + 1, seg_pts[:]))
+            in_seg = False
+            seg_pts = []
+    if in_seg:
+        segs.append((seg_start, len(strokes), seg_pts[:]))
+
+    if len(segs) < 2:
+        return strokes  # no secondary segments to place
+
+    def _bbox_area(pts: list[list[float]]) -> float:
+        xs = [p[0] for p in pts]
+        ys = [p[1] for p in pts]
+        return max(max(xs) - min(xs), 1.0) * max(max(ys) - min(ys), 1.0)
+
+    # Body = first segment with >= 10 pts, else largest bounding-box segment
+    if len(segs[0][2]) >= 10:
+        body_idx = 0
+    else:
+        body_idx = max(range(len(segs)), key=lambda i: _bbox_area(segs[i][2]))
+
+    body_pts = segs[body_idx][2]
+    body_xs = [p[0] for p in body_pts]
+    body_ys = [p[1] for p in body_pts]
+    body_min_x, body_max_x = min(body_xs), max(body_xs)
+    body_min_y, body_max_y = min(body_ys), max(body_ys)
+    body_center_x = (body_min_x + body_max_x) / 2.0
+    body_width = max(body_max_x - body_min_x, 1.0)
+    body_height = max(body_max_y - body_min_y, 1.0)
+
+    # Collect dot segments (small, not the body), sorted left-to-right by x centroid
+    dot_segs_all = [
+        (s, e, pts)
+        for i, (s, e, pts) in enumerate(segs)
+        if i != body_idx and len(pts) <= _DOT_SEG_MAX_PTS
+    ]
+    if not dot_segs_all:
+        return strokes
+
+    dot_segs_all.sort(key=lambda t: sum(p[0] for p in t[2]) / len(t[2]))
+    # Keep only as many as expected
+    dot_segs = dot_segs_all[:dot_count]
+
+    # Geometry parameters
+    spacing = max(body_width * 0.18, 0.35)   # horizontal gap between dots
+    gap = max(body_height * 0.22, 0.28)       # gap from body edge to dot center
+
+    if direction == 'above':
+        base_y = body_max_y + gap
+        pyramid_apex_y = base_y + spacing     # apex sits higher (larger y = up)
+    else:
+        base_y = body_min_y - gap
+        pyramid_apex_y = base_y - spacing     # apex sits lower (smaller y = down)
+
+    # Target (x, y) for each dot slot
+    if dot_count == 1:
+        targets = [(body_center_x, base_y)]
+    elif dot_count == 2:
+        targets = [
+            (body_center_x - spacing, base_y),
+            (body_center_x + spacing, base_y),
+        ]
+    else:  # 3 dots — pyramid
+        targets = [
+            (body_center_x - spacing, base_y),   # bottom-left
+            (body_center_x + spacing, base_y),   # bottom-right
+            (body_center_x, pyramid_apex_y),      # apex
+        ]
+
+    # Move each dot segment to its canonical position
+    result = [list(s) for s in strokes]
+    for i, (seg_start, seg_end, pts) in enumerate(dot_segs):
+        if i >= len(targets):
+            break
+        target_x, target_y = targets[i]
+        cx = sum(p[0] for p in pts) / len(pts)
+        cy = sum(p[1] for p in pts) / len(pts)
+        dx = target_x - cx
+        dy = target_y - cy
+        for j in range(seg_start, seg_end):
+            result[j][0] += dx
+            result[j][1] += dy
+
+    return result
+
+
 def trim_to_n_segments(strokes: list[list[float]], n: int) -> list[list[float]]:
     """Keep only the first n pen-down segments, dropping everything after."""
     count = 0
